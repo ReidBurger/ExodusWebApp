@@ -1,0 +1,55 @@
+.container-sm {
+    background-color: black;
+    max-width: 30em;
+    margin: auto;
+}
+
+h1 {
+    color: white;
+    text-align: left;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 2.5em;
+    margin-bottom: 5em;
+    padding-left: 1em;
+}
+
+h2 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2em;
+    text-align: center;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 2em;
+    padding-bottom: 4em;
+}
+
+#logo {
+    max-width: 15em;
+    max-height: 15em;
+}
+
+iframe {
+    display: block;
+    margin: auto;
+    height: 10em;
+    width: 22em;
+    margin-bottom: 2em;
+    padding-right: .5em;
+    padding-left: .5em;
+}
+
+.btn-primary {
+    background-color: #AC51AE !important;
+    outline-color: #AC51AE !important;
+    width: 22.5em;
+    height: 4.5em;
+    margin-bottom: 2em;
+}
