@@ -1,7 +1,13 @@
+body {
+    background-color: black;
+}
+
 .container-sm {
     background-color: black;
+    outline-color: red;
     max-width: 30em;
     margin: auto;
+    height: 100vh;
 }
 
 h1 {
@@ -11,7 +17,7 @@ h1 {
     font-style: normal;
     font-weight: 900;
     font-size: 2.5em;
-    margin-bottom: 5em;
+    margin-bottom: 20vh;
     padding-left: 1em;
 }
 
@@ -23,27 +29,63 @@ h2 {
     text-align: center;
 }
 
-img {
+h4 {
+    color: white;
+    text-align: center;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 2em;
+    margin-bottom: 4vh;
+    padding-left: 1em;
+}
+
+.logo {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    padding-top: 2em;
-    padding-bottom: 4em;
+    padding-top: 4vh;
+    padding-bottom: 4vh;
 }
 
-#logo {
-    max-width: 15em;
-    max-height: 15em;
+/* Section for the planets */
+.planet {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 25vh;
+    min-width: 10vh;
+    height: 25vh;
+    min-height: 10vh;
+    padding-bottom: 2vh;
 }
+
+
+.planetDiv {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 900;
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.centered {
+    position: absolute;
+    top: 16vh;
+    left: 26vh;
+    right: 26vh;
+}
+/* End section for the planets */
 
 iframe {
     display: block;
     margin: auto;
     height: 10em;
     width: 22em;
-    margin-bottom: 2em;
-    padding-right: .5em;
-    padding-left: .5em;
+    margin-bottom: 4vh;
+    padding-left: .5vw;
+    padding-right: .5vw;
 }
 
 .btn-primary {
@@ -51,5 +93,5 @@ iframe {
     outline-color: #AC51AE !important;
     width: 22.5em;
     height: 4.5em;
-    margin-bottom: 2em;
+    margin-bottom: 4vh;
 }
