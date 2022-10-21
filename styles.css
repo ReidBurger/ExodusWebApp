@@ -35,9 +35,57 @@ h4 {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 900;
-    font-size: 2em;
+    font-size: 1.8em;
     margin-bottom: 4vh;
     padding-left: 1em;
+}
+
+/* Right align the text on the Sally page */
+.right {
+    color: white;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 1.5em;
+    margin-bottom: 4vh;
+    padding-left: 2em;
+    text-align: left;
+}
+
+
+/* Styles for the three lines on the Sally page */
+.line1 {
+    position: relative;
+    width: 6.8em;
+    display: flex;
+    float: right;
+    top: -4em;
+
+    border: 1px solid #F3F3F3;
+}
+
+.line2 {
+    position: relative;
+    width: 11em;
+    float: right;
+    left: 6.8em;
+    top: -3em;
+
+    border: 1px solid #F3F3F3;
+}
+
+.line3 {
+    position: relative;
+    width: 17em;
+    float: right;
+    top: -2em;
+
+    border: 1px solid #F3F3F3;
+}
+/* End styles for the lines */
+
+.filler {
+    height: 30vh;
 }
 
 .logo {
@@ -59,7 +107,6 @@ h4 {
     min-height: 10vh;
     padding-bottom: 2vh;
 }
-
 
 .planetDiv {
     font-family: 'Roboto';
