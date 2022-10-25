@@ -198,3 +198,131 @@ iframe {
     height: 4.5em;
     margin-bottom: 4vh;
 }
+
+.nav-bar-btn {
+    height: 4em;
+    width: 4em;
+}
+
+.planet-btn {
+      
+}
+
+.nation-btn {
+
+}
+
+.stations-btn {
+
+}
+
+.nav-bar {
+    bottom: 0;
+    padding: 20px;
+    background-color: #292929;
+    width: 100%;
+    flex-direction: row;
+    display: flex;
+}
+
+.nav-section {
+    flex: 1;
+}
+
+.station-btn-cont {
+    display: flex;
+    justify-content: center;
+}
+
+.planet-btn-cont {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.modal-medium {
+    width: 80%;
+    max-width: 500px;
+}
+
+.modal-img {
+    width: 100%;
+    padding: 2em;
+}
+
+.modal-large {
+    max-width: 30em;
+    justify-content: center;
+    margin: auto;
+    height: 90%;
+}
+
+.modal-large-content {
+    background-color: #3C3C3C;
+}
+
+.modal-large-footer {
+    justify-content: center;
+}
+
+.btn-warning {
+    width: 90%;
+    max-width: 400px;
+}
+
+.light {
+    color: #F3F3F3;
+}
+
+.no-border {
+    border-color: null;
+    border-width: 0;
+}
+
+.modal-body-large {
+    max-height: 600px;
+    display: flex;
+}
+
+.station-list {
+    width: 100%;
+    justify-self: center;
+    padding-left: 5%;
+    padding-right: 5%;
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+}
+
+.station-list-item {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    list-style: none;
+    justify-content: flex-start;
+    align-content: center;
+}
+
+.station-list-img {
+    flex: 1;
+    margin: 0.5em;
+    display: flex;
+    justify-content: center;
+}
+
+.station-list-title {
+    flex: 10;
+    display: flex;
+    margin: 0.5em;
+    margin-left: 1.5em;
+    justify-content: flex-start;
+    align-self: center;
+}
+
+.station-list-check {
+    flex: 2;
+    margin: 0.5em;
+    display: flex;
+    height: 30%;
+    justify-content: flex-end;
+    align-self: center;
+}
