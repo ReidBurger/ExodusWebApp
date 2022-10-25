@@ -4,7 +4,6 @@ body {
 
 .container-sm {
     background-color: black;
-    outline-color: red;
     max-width: 30em;
     margin: auto;
     height: 100vh;
@@ -60,28 +59,26 @@ h4 {
     display: flex;
     float: right;
     top: -4em;
-
     border: 1px solid #F3F3F3;
 }
 
 .line2 {
     position: relative;
-    width: 11em;
+    width: 10em;
     float: right;
     left: 6.8em;
     top: -3em;
-
     border: 1px solid #F3F3F3;
 }
 
 .line3 {
     position: relative;
-    width: 17em;
+    width: 15em;
     float: right;
     top: -2em;
-
     border: 1px solid #F3F3F3;
 }
+
 /* End styles for the lines */
 
 .filler {
@@ -120,10 +117,69 @@ h4 {
 .centered {
     position: absolute;
     top: 16vh;
-    left: 26vh;
-    right: 26vh;
+    left: 6em;
+    right: 6em;
 }
+
 /* End section for the planets */
+
+
+/* Section for the station page */
+.stationImage {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 25vh;
+    min-width: 10vh;
+    height: 25vh;
+    min-height: 10vh;
+    padding-bottom: 2vh;
+    margin-top: 4vh;
+}
+
+.stationCentered {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 900;
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.centeredStation {
+    position: absolute;
+    top: 17.5vh;
+    left: 6em;
+    right: 6em;
+}
+
+.playButton {
+    position: absolute;
+    margin-left: -6em;
+    top: -1em;
+    width: 5vh;
+    min-width: 1vh;
+    height: 5vh;
+    min-height: 1vh;
+}
+
+.option {
+    position: relative;
+    text-align: center;
+    color: white;
+    padding-top: .5em;
+    padding-bottom: .5em;
+}
+
+.optionText {
+    position: absolute;
+    top: 2em;
+    left: 7em;
+    right: 6em;
+    color: white;
+}
+
+/* End section for the station page */
 
 iframe {
     display: block;
