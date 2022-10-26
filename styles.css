@@ -17,7 +17,6 @@ h1 {
     font-weight: 900;
     font-size: 2.5em;
     margin-bottom: 20vh;
-    padding-left: 1em;
 }
 
 h2 {
@@ -39,15 +38,15 @@ h4 {
     padding-left: 1em;
 }
 
-/* Right align the text on the Sally page */
-.right {
+/* Left align the text on the Sally page */
+.left {
     color: white;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 900;
     font-size: 1.5em;
     margin-bottom: 4vh;
-    padding-left: 2em;
+    /* padding-left: 2em; */
     text-align: left;
 }
 
@@ -56,7 +55,6 @@ h4 {
 .line1 {
     position: relative;
     width: 6.8em;
-    display: flex;
     float: right;
     top: -4em;
     border: 1px solid #F3F3F3;
@@ -78,7 +76,6 @@ h4 {
     top: -2em;
     border: 1px solid #F3F3F3;
 }
-
 /* End styles for the lines */
 
 .filler {
@@ -178,7 +175,6 @@ h4 {
     right: 6em;
     color: white;
 }
-
 /* End section for the station page */
 
 iframe {
@@ -325,4 +321,138 @@ iframe {
     height: 30%;
     justify-content: flex-end;
     align-self: center;
+}
+
+/* Section for the final score page */
+.container2 {
+    background: linear-gradient(180deg, #3E3E3E 0%, #2C2C2C 100%);
+    margin-top: 5vh;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 20em;
+    height: 70vh;
+    min-height: 70vh;
+}
+
+/* rounds the corner of a container */
+.rounded {
+    border-radius: .8rem !important
+}
+
+.nation {
+    display: inline;
+    padding-top: .5em;
+    padding-right: .5em;
+}
+
+.flag {
+    width: 4em;
+    height: 2em;
+}
+
+.FinalScoreNationText {
+    display: inline;
+    font-size: .8em;
+    margin-left: -1em;
+    margin-right: 1em ;
+}
+
+.planet {
+   display: inline;
+   padding-bottom: 2vh;
+}
+
+.FinalScorePlanet {
+    display: inline;
+    width: 4em;
+    height: 4em;
+    padding-bottom: 2vh;
+    margin-top: 2vh;
+}
+
+.FinalScorePlanetText {
+    display: inline;
+    font-size: .8em;
+    margin-left: -1em;
+}
+
+.MainBar {
+    padding-top: 2.5vh;
+}
+
+.icon {
+    padding-top: .4em;
+}
+
+.percent {
+    position: absolute;
+    font-family: 'Sen';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1em;
+    color: #F3F3F3;
+    margin-left: 15em;
+    padding-top: .5em;
+}
+
+.text {
+    position: absolute;
+    font-family: 'Sen';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1em;
+    color: #FFFFFF;
+    padding-left: 1em;
+    padding-top: .5em;
+}
+
+.bar {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 15em;
+    min-width: 10em;
+    height: 6vh;
+    min-height: 2em;
+    float: right;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 50.52%, rgba(255, 255, 255, 0.2) 100%);
+    border-radius: 10px;
+}
+
+.fill {
+    display: block;
+    margin-right: auto;
+    height: 6vh;
+    min-height: 2em;
+    border-radius: 10px;
+}
+
+.health {
+    width: 14em;
+    min-width: 7em;
+    background: linear-gradient(180deg, #DC2F2F 0%, #B70A0A 46.88%, #D72626 100%);
+}
+
+.morale {
+    width: 10em;
+    min-width: 5em;
+    background: linear-gradient(180deg, #D1CB2F 0%, #A8A20F 53.12%, #DFD832 100%);
+}
+
+.sustainability {
+    width: 12em;
+    min-width: 6em;
+    background: linear-gradient(180deg, #4EB94C 0%, #137511 52.08%, #2D8E2B 100%);
+}
+
+.economy {
+    width: 5em;
+    min-width: 2.5em;
+    background: linear-gradient(180deg, #671186 0%, #4C0963 51.04%, #671186 100%, #671186 100%);
+}
+
+.defense {
+    width: 8em;
+    min-width: 4em;
+    background: linear-gradient(180deg, #3891B7 0%, #25789B 49.48%, #3891B7 100%);
 }
