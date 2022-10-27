@@ -35,7 +35,6 @@ h4 {
     font-weight: 900;
     font-size: 1.8em;
     margin-bottom: 4vh;
-    padding-left: 1em;
 }
 
 /* Left align the text on the Sally page */
@@ -46,7 +45,6 @@ h4 {
     font-weight: 900;
     font-size: 1.5em;
     margin-bottom: 4vh;
-    /* padding-left: 2em; */
     text-align: left;
 }
 
@@ -57,7 +55,7 @@ h4 {
     width: 6.8em;
     float: right;
     top: -4em;
-    border: 1px solid #F3F3F3;
+    border-top: 1px solid #F3F3F3;
 }
 
 .line2 {
@@ -66,7 +64,7 @@ h4 {
     float: right;
     left: 6.8em;
     top: -3em;
-    border: 1px solid #F3F3F3;
+    border-top: 1px solid #F3F3F3;
 }
 
 .line3 {
@@ -74,7 +72,7 @@ h4 {
     width: 15em;
     float: right;
     top: -2em;
-    border: 1px solid #F3F3F3;
+    border-top: 1px solid #F3F3F3;
 }
 /* End styles for the lines */
 
@@ -190,9 +188,12 @@ iframe {
 .btn-primary {
     background-color: #AC51AE !important;
     outline-color: #AC51AE !important;
-    width: 22.5em;
+    width: 20em;
     height: 4.5em;
-    margin-bottom: 4vh;
+}
+
+.btn-primary h2 {
+    margin-top: 0.3em;
 }
 
 .nav-bar-btn {
