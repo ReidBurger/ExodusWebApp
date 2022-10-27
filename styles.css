@@ -550,10 +550,15 @@ iframe {
 
   .buffer {
     height: 100px;
-    border-bottom: 0px solid yellow;
     z-index: 100;
   }
 
   .btn-next {
     margin-bottom: 4em;
+  }
+
+  .btn-depart {
+    height: 3em;
+    background-color: #E0E34F;
+    align-items: center;
   }
