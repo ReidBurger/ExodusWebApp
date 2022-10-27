@@ -19,7 +19,7 @@
 <body>
     <div class="container-sm">
         <img class="logo" src="images/logo2.png" alt="Exodus Logo">
-
+        
         <div class="stationCentered">
             <a href="sally.html" class="playButton">
                 <img src="images/playButton.png" alt="Play Button">
@@ -29,33 +29,165 @@
             <div class="centeredStation">Station X</div>
         </div>
 
-        <div id="S1O1" class="option">
-            <a href="">
-                <img src="images/stationButton.png">
-                <div class="optionText">Option 1</div>
-            </a>
-        </div>
+        <div id="stationList">
+            <div id="S1O1" class="option">
+                <a href="">
+                    <img src="images/stationButton.png">
+                    <div class="optionText">Option 1</div>
+                </a>
+            </div>
 
-        <div id="S1O2" class="option">
-            <a href="">
-                <img src="images/stationButton.png">
-                <div class="optionText">Option 2</div>
-            </a>
-        </div>
+            <div id="S1O2" class="option">
+                <a href="">
+                    <img src="images/stationButton.png">
+                    <div class="optionText">Option 2</div>
+                </a>
+            </div>
 
-        <div id="S1O3" class="option">
-            <a href="">
-                <img src="images/stationButton.png">
-                <div class="optionText">Option 3</div>
-            </a>
-        </div>
+            <div id="S1O3" class="option">
+                <a href="">
+                    <img src="images/stationButton.png">
+                    <div class="optionText">Option 3</div>
+                </a>
+            </div>
 
-        <div id="S1O4" class="option">
-            <a href="">
-                <img src="images/stationButton.png">
-                <div class="optionText">Option 4</div>
-            </a>
+            <div id="S1O4" class="option">
+                <a href="">
+                    <img src="images/stationButton.png">
+                    <div class="optionText">Option 4</div>
+                </a>
+            </div>
         </div>
+        <!-- Pop up -->
+        <div class="modal fade" id="nationModal" tabindex="-1" aria-labelledby="nationModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-medium">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h3 class="modal-title fs-5" id="nationModalLabel">NATION</h3>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <img class="modal-img" src="images/flag_default.webp" alt="Nation Flag">
+                </div>
+                <div class="modal-footer">
+                  <h3>Nation Name</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          <div class="modal fade" id="planetModal" tabindex="-1" aria-labelledby="planetModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-medium">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h3 class="modal-title fs-5" id="planetModalLabel">PLANET</h3>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <img class="modal-img" src="images/planet1.png" alt="Planet">
+                </div>
+                <div class="modal-footer">
+                  <h3>Planet Name</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          <div class="modal fade" id="stationsModal" tabindex="-1" aria-labelledby="stationsModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-fullscreen modal-large" id="stationModalDialog">
+              <div class="modal-content modal-large-content" id="stationModalContent">
+                <button type="button" class="btn-close btn-close-white light" data-bs-dismiss="modal" aria-label="Close"></button>
+                <div class="modal-header no-border">
+                  <h3 class="modal-title fs-5 light" id="stationsModalLabel">STATIONS</h3>
+                </div>
+                <div class="modal-body no-border modal-body-large">
+                  <ul class="station-list">
+                    <li class="station-list-item">
+                      <img class="station-list-img" src="images/station_img_default.png" alt="Station X Image">
+                      <h5 class="station-list-title light">Station 1</h5>
+                      <div class="station-list-check">
+                        <img src="images/checkmark.png" alt="Station Complete">
+                      </div>
+                    </li>
+                    <li class="station-list-item">
+                      <img class="station-list-img" src="images/station_img_default.png" alt="Station X Image">
+                      <h5 class="station-list-title light">Station 2</h5>
+                      <div class="station-list-check">
+                        <img src="images/checkmark.png" alt="Station Complete">
+                      </div>
+                    </li>
+                    <li class="station-list-item">
+                      <img class="station-list-img" src="images/station_img_default.png" alt="Station X Image">
+                      <h5 class="station-list-title light">Station 3</h5>
+                      <div class="station-list-check">
+                        <img src="images/checkmark.png" alt="Station Complete">
+                      </div>
+                    </li>
+                    <li class="station-list-item">
+                      <img class="station-list-img" src="images/station_img_default.png" alt="Station X Image">
+                      <h5 class="station-list-title light">Station 4</h5>
+                      <div class="station-list-check">
+                        <img src="images/checkmark.png" alt="Station Complete">
+                      </div>
+                      
+                    </li>
+                    <li class="station-list-item">
+                      <img class="station-list-img" src="images/station_img_default.png" alt="Station X Image">
+                      <h5 class="station-list-title light">Station 5</h5>
+                      <div class="station-list-check">
+                        <img src="images/checkmark.png" alt="Station Complete">
+                      </div>
+                    </li>
+                    <li class="station-list-item">
+                      <img class="station-list-img" src="images/station_img_default.png" alt="Station X Image">
+                      <h5 class="station-list-title light">Station 6</h5>
+                      <div class="station-list-check">
+                        <img src="images/checkmark.png" alt="Station Complete">
+                      </div>
+                    </li>
+                    <li class="station-list-item">
+                      <img class="station-list-img" src="images/station_img_default.png" alt="Station X Image">
+                      <h5 class="station-list-title light">Station 7</h5>
+                      <div class="station-list-check">
+                        <img src="images/checkmark.png" alt="Station Complete">
+                      </div>
+                      
+                    </li>
+                    <li class="station-list-item">
+                      <img class="station-list-img" src="images/station_img_default.png" alt="Station X Image">
+                      <h5 class="station-list-title light">Station 8</h5>
+                      <div class="station-list-check">
+                        <img src="images/checkmark.png" alt="Station Complete">
+                      </div>
+                    </li>
+                    <li class="station-list-item">
+                      <img class="station-list-img" src="images/station_img_default.png" alt="Station X Image">
+                      <h5 class="station-list-title light">Station 9</h5>
+                      <div class="station-list-check">
+                        <img src="images/checkmark.png" alt="Station Complete">
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <div class="modal-footer modal-large-footer no-border">
+                  <button type="button" class="btn btn-warning">Depart</button>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+  
+          <div class="nav-bar fixed-bottom">
+              <div class="nav-section nation-btn-cont">
+                  <button type="button" class="btn btn-secondary nav-bar-btn nation-btn" data-bs-toggle="modal" data-bs-target="#nationModal">N</button>
+              </div>
+              <div class="nav-section station-btn-cont">
+                  <button type="button" class="btn btn-secondary nav-bar-btn stations-btn" data-bs-toggle="modal" data-bs-target="#stationsModal">M</button>
+              </div>
+              <div class="nav-section planet-btn-cont">
+                  <button type="button" class="btn btn-secondary nav-bar-btn planet-btn" data-bs-toggle="modal" data-bs-target="#planetModal">P</button>
+              </div>
+          </div>
     </div>
 </body>
 
