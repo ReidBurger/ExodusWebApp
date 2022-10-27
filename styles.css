@@ -218,18 +218,25 @@ iframe {
 }
 
 .nav-bar-btn-lg {
-    height: 70px;
-    width: 70px;
+    height: 80px;
+    width: 80px;
 }
 
 .planet-btn {
+    align-self: baseline;
 }
 
 .nation-btn {
+    align-items: baseline;
+}
+
+.nav-icon {
+    font-size: 2em;
 }
 
 .stations-btn {
     border-radius: 100%;
+    background-color: #AC51AE;
 }
 
 .nav-bar {
@@ -245,6 +252,10 @@ iframe {
     flex: 1;
 }
 
+.nation-btn-cont {
+    align-self: center;
+}
+
 .station-btn-cont {
     display: flex;
     justify-content: center;
@@ -253,7 +264,7 @@ iframe {
 .planet-btn-cont {
     display: flex;
     justify-content: flex-end;
-    align-items: baseline;
+    align-self: center;
 }
 
 .modal-medium {
@@ -541,4 +552,8 @@ iframe {
     height: 100px;
     border-bottom: 0px solid yellow;
     z-index: 100;
+  }
+
+  .btn-next {
+    margin-bottom: 4em;
   }
