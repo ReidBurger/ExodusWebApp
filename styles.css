@@ -1,5 +1,6 @@
 body {
     background-color: black;
+    overflow: hidden;
 }
 
 .container-sm {
@@ -203,20 +204,23 @@ iframe {
 }
 
 .nav-bar-btn {
-    height: 4em;
-    width: 4em;
+    height: 60px;
+    width: 60px;
+}
+
+.nav-bar-btn-lg {
+    height: 70px;
+    width: 70px;
 }
 
 .planet-btn {
-
 }
 
 .nation-btn {
-
 }
 
 .stations-btn {
-
+    border-radius: 100%;
 }
 
 .nav-bar {
@@ -240,6 +244,7 @@ iframe {
 .planet-btn-cont {
     display: flex;
     justify-content: flex-end;
+    align-items: baseline;
 }
 
 .modal-medium {
@@ -325,10 +330,18 @@ iframe {
 }
 
 .station-list-item {
+    list-style: none;
+}
+
+.station-list-btn {
+    padding: 0;
+    width: 100%;
+}
+
+.station-list-container {
     display: flex;
     flex: 1;
     flex-direction: row;
-    list-style: none;
     justify-content: flex-start;
     align-content: center;
 }
@@ -338,7 +351,9 @@ iframe {
     margin: 0.5em;
     display: flex;
     justify-content: center;
-    width: 2.2em;
+    align-self: center;
+    width: 2.5em;
+    height: 2.5em;
 }
 
 .station-list-title {
@@ -510,4 +525,10 @@ iframe {
   /* Handle on hover */
   ::-webkit-scrollbar-thumb:hover {
     background: transparent;
+  }
+
+  .buffer {
+    height: 100px;
+    border-bottom: 0px solid yellow;
+    z-index: 100;
   }
