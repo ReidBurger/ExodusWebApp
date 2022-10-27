@@ -220,8 +220,7 @@ iframe {
 }
 
 .nav-bar {
-    bottom: 0;
-    margin: auto;
+    margin: 0 auto;
     padding: 20px;
     background-color: black;
     width: 25em;
@@ -298,7 +297,7 @@ iframe {
 }
   
 #stationsModal.modal.show .modal-dialog {
-    transform: translate3d(0, 11vh, 0);
+    transform: translate3d(0, 10vh, 0);
 }
 
 #stationModalDialog {
@@ -306,7 +305,8 @@ iframe {
 }
 
 #stationModalContent {
-    border-radius: 7px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
 }
 
 #stationsModalLabel {
