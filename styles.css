@@ -166,16 +166,12 @@ h4 {
 }
 
 .option {
-    position: relative;
     text-align: center;
     color: white;
-    padding-top: .5em;
-    padding-bottom: .5em;
 }
 
 .optionButton {
-    width: 20em;
-    min-width: 10em;
+    width: 100%;
     height: 4em;
     background-color: #3C3C3C;
     border: 2px solid white;
@@ -216,6 +212,7 @@ iframe {
 .nav-bar-btn {
     height: 60px;
     width: 60px;
+    background-color: #513F91;
 }
 
 .nav-bar-btn-lg {
@@ -566,4 +563,16 @@ iframe {
     height: 3em;
     background-color: #E0E34F;
     align-items: center;
+}
+
+.btn-outline-success {
+    background-color: #3C3C3C;
+    color: #FFF;
+    border-color: #FFF;
+}
+
+.btn-success {
+    background-color: #2F8241;
+    color: #FFF;
+    border-color: #FFF;
 }
