@@ -253,6 +253,7 @@ iframe {
     padding: 20px;
     width: 25em;
     flex-direction: row;
+    background-color: black;
     display: flex;
 }
 
