@@ -303,6 +303,8 @@ iframe {
     width: 90%;
     max-width: 400px;
     margin-bottom: 1.5em;
+    margin-top: 50px;
+    background-color: red;
 }
 
 .light {
@@ -573,7 +575,6 @@ iframe {
 .btn-depart {
     height: 3em;
     background-color: #E0E34F;
-    align-items: center;
 }
 
 .btn-outline-success {

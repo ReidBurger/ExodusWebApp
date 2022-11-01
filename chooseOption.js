@@ -18,16 +18,19 @@ window.addEventListener('load', function () {
     localStorage.setItem("station8", null);
     localStorage.setItem("station9", null);
 
+    // nation can be froichua, lesniuberg, ufren, otraria, or niqnio
+    localStorage.setItem("nation", "froichua");
+
     /** choose planet */
     if (planet1 != null) {
         planet1.addEventListener("click", function () {
-            selectPlanet("planet1");
+            selectPlanet("ecralia");
         });
         planet2.addEventListener("click", function () {
-            selectPlanet("planet2");
+            selectPlanet("anvolia");
         });
         planet3.addEventListener("click", function () {
-            selectPlanet("planet3");
+            selectPlanet("mion");
         });
     }
 
@@ -61,31 +64,31 @@ window.addEventListener('load', function () {
     function updateCheckmarks() {
         if (localStorage.getItem("station1") == "null") {
             document.getElementById("check1").style.display = "none";
-        } else { document.getElementById("check1").style.display = "inline"}
+        } else { document.getElementById("check1").style.display = "inline" }
         if (localStorage.getItem("station2") == "null") {
             document.getElementById("check2").style.display = "none";
-        } else { document.getElementById("check2").style.display = "inline"}
+        } else { document.getElementById("check2").style.display = "inline" }
         if (localStorage.getItem("station3") == "null") {
             document.getElementById("check3").style.display = "none";
-        } else { document.getElementById("check3").style.display = "inline"}
+        } else { document.getElementById("check3").style.display = "inline" }
         if (localStorage.getItem("station4") == "null") {
             document.getElementById("check4").style.display = "none";
-        } else { document.getElementById("check4").style.display = "inline"}
+        } else { document.getElementById("check4").style.display = "inline" }
         if (localStorage.getItem("station5") == "null") {
             document.getElementById("check5").style.display = "none";
-        } else { document.getElementById("check5").style.display = "inline"}
+        } else { document.getElementById("check5").style.display = "inline" }
         if (localStorage.getItem("station6") == "null") {
             document.getElementById("check6").style.display = "none";
-        } else { document.getElementById("check6").style.display = "inline"}
+        } else { document.getElementById("check6").style.display = "inline" }
         if (localStorage.getItem("station7") == "null") {
             document.getElementById("check7").style.display = "none";
-        } else { document.getElementById("check7").style.display = "inline"}
+        } else { document.getElementById("check7").style.display = "inline" }
         if (localStorage.getItem("station8") == "null") {
             document.getElementById("check8").style.display = "none";
-        } else { document.getElementById("check8").style.display = "inline"}
+        } else { document.getElementById("check8").style.display = "inline" }
         if (localStorage.getItem("station9") == "null") {
             document.getElementById("check9").style.display = "none";
-        } else { document.getElementById("check9").style.display = "inline"}
+        } else { document.getElementById("check9").style.display = "inline" }
     }
 
 })
