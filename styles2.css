@@ -1,12 +1,14 @@
 body {
     background-color: black;
+    overflow: hidden;
 }
 
 .container-sm {
-    background-color: red;
+    position: relative;
+    background-color: black;
     max-width: 30em;
     margin: auto;
-    height: 430px;
+    height: 100vh;
 }
 
 h1 {
@@ -75,6 +77,7 @@ h4 {
     border-top: 1px solid #F3F3F3;
     margin-bottom: 3em;
 }
+
 /* End styles for the lines */
 
 .filler {
@@ -82,17 +85,11 @@ h4 {
 }
 
 .logo {
-    z-index: 100;
     display: block;
     margin-left: auto;
     margin-right: auto;
     padding-top: 4vh;
     padding-bottom: 4vh;
-    position: fixed;
-    left: 50%;
-    top: 7%;
-    transform: translate(-50%, -50%);
-    background-color: black;
 }
 
 /* Section for the planets */
@@ -140,36 +137,34 @@ h4 {
 }
 
 .stationCentered {
-    z-index: 100;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 900;
+    position: relative;
     text-align: center;
     color: white;
-    position: fixed;
-    left: 50%;
-    top: 25%;
-    transform: translate(-50%, -50%);
-}
-
-.stationRelativeDiv {
-    position: relative;
 }
 
 .centeredStation {
     position: absolute;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    bottom: 8%;
+    top: 17.5vh;
+    left: 6em;
+    right: 6em;
 }
 
 .playButton {
     position: absolute;
-    left: 0;
+    margin-left: -6em;
+    top: -1em;
+    width: 5vh;
+    min-width: 1vh;
+    height: 5vh;
+    min-height: 1vh;
 }
 
 #stationList {
-    margin-top: 40vh;
+    overflow: auto;
+    max-height: 40.5vh;
 }
 
 .option {
@@ -196,6 +191,13 @@ h4 {
     right: 6em;
     color: white;
 }
+
+#fillerOption .optionButton {
+    background-color: transparent;
+    border: none;
+    pointer-events: none;
+}
+
 /* End section for the station page */
 
 iframe {
@@ -225,24 +227,30 @@ iframe {
 }
 
 .nav-bar-btn-lg {
-    height: 70px;
-    width: 70px;
+    height: 80px;
+    width: 80px;
 }
 
 .planet-btn {
+    align-self: baseline;
 }
 
 .nation-btn {
+    align-items: baseline;
+}
+
+.nav-icon {
+    font-size: 2em;
 }
 
 .stations-btn {
     border-radius: 100%;
+    background-color: #AC51AE;
 }
 
 .nav-bar {
     margin: 0 auto;
     padding: 20px;
-    background-color: black;
     width: 25em;
     flex-direction: row;
     display: flex;
@@ -250,6 +258,11 @@ iframe {
 
 .nav-section {
     flex: 1;
+    background-color: transparent;
+}
+
+.nation-btn-cont {
+    align-self: center;
 }
 
 .station-btn-cont {
@@ -260,7 +273,7 @@ iframe {
 .planet-btn-cont {
     display: flex;
     justify-content: flex-end;
-    align-items: baseline;
+    align-self: center;
 }
 
 .modal-medium {
@@ -317,7 +330,7 @@ iframe {
 #stationsModal.modal.fade .modal-dialog {
     transform: translate3d(0, 100vh, 0);
 }
-  
+
 #stationsModal.modal.show .modal-dialog {
     transform: translate3d(0, 10vh, 0);
 }
@@ -407,10 +420,17 @@ iframe {
     border-radius: .8rem !important
 }
 
+.buffer2 {
+    height: 4em;
+    z-index: 100;
+}
+
 .nation {
-    display: inline;
-    padding-top: .5em;
-    padding-right: .5em;
+    float: left;
+    padding-top: .8em;
+    padding-left: .5em;
+    width: auto;
+    height: auto;
 }
 
 .flag {
@@ -421,35 +441,32 @@ iframe {
 .FinalScoreNationText {
     display: inline;
     font-size: .8em;
-    margin-left: -1em;
-    margin-right: 1em ;
 }
 
 .planet {
-   display: inline;
-   padding-bottom: 2vh;
+    float: right;
+    padding-top: .5em;
+    padding-right: .5em;
+    width: auto;
+    height: auto;
 }
 
 .FinalScorePlanet {
-    display: inline;
-    width: 4em;
-    height: 4em;
-    padding-bottom: 2vh;
-    margin-top: 2vh;
+    width: 3em;
+    height: 3em;
 }
 
 .FinalScorePlanetText {
     display: inline;
     font-size: .8em;
-    margin-left: -1em;
 }
 
 .MainBar {
-    padding-top: 2.5vh;
+    margin-top: 2em;
 }
 
 .icon {
-    padding-top: .4em;
+    margin-top: .5em;
 }
 
 .percent {
@@ -460,7 +477,7 @@ iframe {
     font-size: 1em;
     color: #F3F3F3;
     margin-left: 15em;
-    padding-top: .5em;
+    margin-top: .5em;
 }
 
 .text {
@@ -471,7 +488,7 @@ iframe {
     font-size: 1em;
     color: #FFFFFF;
     padding-left: 1em;
-    padding-top: .5em;
+    margin-top: .5em;
 }
 
 .bar {
@@ -527,25 +544,33 @@ iframe {
 
 ::-webkit-scrollbar {
     width: 0px;
-  }
-  
-  /* Track */
-  ::-webkit-scrollbar-track {
-    background: transparent;
-  }
-  
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
-    background: transparent;
-  }
-  
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
-    background: transparent;
-  }
+}
 
-  .buffer {
-    height: 100px;
-    border-bottom: 0px solid yellow;
-    z-index: 100;
-  }
+/* Track */
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: transparent;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: transparent;
+}
+
+.buffer {
+    height: 20vh;
+}
+
+.btn-next {
+    margin-bottom: 4em;
+}
+
+.btn-depart {
+    height: 3em;
+    background-color: #E0E34F;
+    align-items: center;
+}
