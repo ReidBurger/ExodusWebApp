@@ -13,7 +13,7 @@ body {
 h1 {
     color: white;
     text-align: center;
-    font-family: 'Roboto';
+    font-family: 'Sen', sans-serif;;
     font-style: normal;
     font-weight: 900;
     font-size: 2.5em;
@@ -21,17 +21,23 @@ h1 {
 }
 
 h2 {
-    font-family: 'Roboto';
+    font-family: 'Sen', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 2em;
     text-align: center;
 }
 
+h3 {
+    font-family: 'Sen', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+}
+
 h4 {
     color: white;
     text-align: center;
-    font-family: 'Roboto';
+    font-family: 'Sen', sans-serif;
     font-style: normal;
     font-weight: 900;
     font-size: 1.8em;
@@ -41,7 +47,7 @@ h4 {
 /* Left align the text on the Sally page */
 .center {
     color: white;
-    font-family: 'Roboto';
+    font-family: 'Sen', sans-serif;
     font-style: normal;
     font-weight: 900;
     font-size: 1.5em;
@@ -135,9 +141,9 @@ h4 {
 }
 
 .stationCentered {
-    font-family: 'Roboto';
+    font-family: 'Sen';
     font-style: normal;
-    font-weight: 900;
+    font-weight: 700;
     position: relative;
     text-align: center;
     color: white;
@@ -179,13 +185,15 @@ h4 {
 }
 
 .optionText {
+    font-family: 'Sen';
+    font-style: normal;
+    font-weight: 700;
     position: absolute;
     top: 1.5em;
     left: 7em;
     right: 6em;
     color: white;
 }
-
 /* End section for the station page */
 
 iframe {
@@ -382,6 +390,9 @@ iframe {
     margin-left: 1.5em;
     justify-content: flex-start;
     align-self: center;
+    font-family: 'Sen', sans-serif;;
+    font-style: normal;
+    font-weight: 700; 
 }
 
 .station-list-check {
@@ -429,7 +440,7 @@ iframe {
 
 .FinalScoreNationText {
     display: inline;
-    font-size: .8em;
+    font-size: 1em;
 }
 
 .planet {
@@ -447,7 +458,7 @@ iframe {
 
 .FinalScorePlanetText {
     display: inline;
-    font-size: .8em;
+    font-size: 1em;
 }
 
 .MainBar {
@@ -460,8 +471,8 @@ iframe {
 
 .percent {
     position: absolute;
-    font-family: 'Sen';
-    font-style: normal;
+    /* font-family: 'Sen';
+    font-style: normal; */
     font-weight: 700;
     font-size: 1em;
     color: #F3F3F3;
@@ -471,8 +482,8 @@ iframe {
 
 .text {
     position: absolute;
-    font-family: 'Sen';
-    font-style: normal;
+    /* font-family: 'Sen';
+    font-style: normal; */
     font-weight: 700;
     font-size: 1em;
     color: #FFFFFF;
