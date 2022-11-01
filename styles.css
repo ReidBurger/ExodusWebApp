@@ -466,7 +466,7 @@ iframe {
 }
 
 .icon {
-    margin-top: .5em;
+    padding-top: .35em;
 }
 
 .percent {
@@ -477,7 +477,7 @@ iframe {
     font-size: 1em;
     color: #F3F3F3;
     margin-left: 15em;
-    margin-top: .5em;
+    margin-top: .7em;
 }
 
 .text {
@@ -488,7 +488,7 @@ iframe {
     font-size: 1em;
     color: #FFFFFF;
     padding-left: 1em;
-    margin-top: .5em;
+    margin-top: .7em;
 }
 
 .bar {
