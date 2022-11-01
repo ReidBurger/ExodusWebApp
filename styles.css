@@ -92,7 +92,7 @@ h4 {
 }
 
 /* Section for the planets */
-.planet {
+.choosePlanet {
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -118,7 +118,6 @@ h4 {
     left: 6em;
     right: 6em;
 }
-
 /* End section for the planets */
 
 
