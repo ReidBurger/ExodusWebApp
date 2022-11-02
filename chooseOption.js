@@ -57,9 +57,31 @@ window.addEventListener('load', function () {
 
     function selectPlanet(planet) {
         localStorage.setItem("planet", planet);
+        setImageStrings(localStorage.getItem("planet"), localStorage.getItem("nation"));
+    }
+
+    function setImageStrings(planet, nation) {
+        localStorage.setItem("planetURL", "images/" + planet + ".png");
+        localStorage.setItem("flagURL", "images/" + nation + ".png");
+    }
+
+    function formatNation(nation) {
+        if (nation == "froichua") {
+            return "Froi Chua"
+        } else {
+            return string.charAt(0).toUpperCase() + string.slice(1);
+        }
+    }
+
+    function createPopups() {
+        document.getElementById("flag-popup").src = localStorage.getItem("flagURL");
+        document.getElementById("planet-popup").src = localStorage.getItem("planetURL");
+        document.getElementById("nation-name").innerHTML = "<h3>" + 
+            formatNation(localStorage.getItem("nation")) + "</h3>";
     }
 
     updateCheckmarks();
+    createPopups();
 
     function updateCheckmarks() {
         if (localStorage.getItem("station1") == "null") {

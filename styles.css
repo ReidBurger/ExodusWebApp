@@ -4,7 +4,6 @@ body {
 }
 
 .container-sm {
-    background-color: black;
     max-width: 30em;
     margin: auto;
     height: 100vh;
@@ -97,25 +96,21 @@ h4 {
     padding-bottom: 4vh;
 }
 
+.planet-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 /* Section for the planets */
 .choosePlanet {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 25vh;
-    min-width: 10vh;
+    display: flex;
     height: 25vh;
-    min-height: 10vh;
     padding-bottom: 2vh;
 }
 
 .planetDiv {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 900;
-    position: relative;
-    text-align: center;
-    color: white;
+    display: flex;
 }
 
 .centered {
@@ -281,7 +276,6 @@ iframe {
 
 .modal-img {
     width: 100%;
-    padding: 2em;
 }
 
 .modal-large {
