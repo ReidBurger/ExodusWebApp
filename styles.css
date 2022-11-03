@@ -1,5 +1,5 @@
 body {
-    background-color: black;
+    background-color: #181818;
     overflow: hidden;
 }
 
@@ -243,7 +243,7 @@ iframe {
 .nav-bar {
     margin: 0 auto;
     padding: 20px;
-    background-color: black;
+    background-color: #181818;
     flex-direction: row;
     display: flex;
 }
