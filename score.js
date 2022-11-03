@@ -108,15 +108,75 @@ function calculateScore() {
         else {
             station7_nation_score += 3;
         }
-        // froichua station 2 options
-        if (localStorage.getItem("station2") == "option1") {
-            station2_nation_score += 5;
+        // froichua station 8 options
+        if (localStorage.getItem("station8") == "option1") {
+            station8_nation_score += 5;
         }
-        else if (localStorage.getItem("station2") == "option2") {
-            station2_nation_score += 1;
+        else if (localStorage.getItem("station8") == "option2") {
+            station8_nation_score += 1;
         }
         else {
-            station2_nation_score += 3;
+            station8_nation_score += 3;
+        }
+        // froichua station 9 options
+        if (localStorage.getItem("station9") == "option1") {
+            station9_nation_score += 5;
+        }
+        else if (localStorage.getItem("station9") == "option2") {
+            station9_nation_score += 1;
+        }
+        else {
+            station9_nation_score += 3;
+        }
+        // froichua station 10 options
+        if (localStorage.getItem("station10") == "option1") {
+            station10_nation_score += 5;
+        }
+        else if (localStorage.getItem("station10") == "option2") {
+            station10_nation_score += 1;
+        }
+        else {
+            station10_nation_score += 3;
+        }
+        // froichua station 11 options
+        if (localStorage.getItem("station11") == "option1") {
+            station11_nation_score += 5;
+        }
+        else if (localStorage.getItem("station11") == "option2") {
+            station11_nation_score += 1;
+        }
+        else {
+            station11_nation_score += 3;
+        }
+        // froichua station 12 options
+        if (localStorage.getItem("station12") == "option1") {
+            station12_nation_score += 5;
+        }
+        else if (localStorage.getItem("station12") == "option2") {
+            station12_nation_score += 1;
+        }
+        else {
+            station12_nation_score += 3;
+        }
+        // froichua station 13 options
+        if (localStorage.getItem("station13") == "option1") {
+            station13_nation_score += 5;
+        }
+        else if (localStorage.getItem("station13") == "option2") {
+            station13_nation_score += 1;
+        }
+        else {
+            station13_nation_score += 3;
+        }
+        // froichua station 14 options
+        if (localStorage.getItem("station14") == "option1") {
+            station14_nation_score += 5;
+        }
+        else if (localStorage.getItem("station14") == "option2") {
+            station14_nation_score += 1;
+        }
+        else {
+            station14_nation_score += 3;
         }
     }
 
