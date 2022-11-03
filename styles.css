@@ -244,7 +244,7 @@ iframe {
     margin: 0 auto;
     padding: 20px;
     background-color: black;
-    width: 25em;
+    width: 30em;
     flex-direction: row;
     display: flex;
 }
@@ -581,4 +581,11 @@ iframe {
     background-color: #2F8241;
     color: #FFF;
     border-color: #FFF;
+}
+
+#fillerOption {
+    background-color: transparent;
+    color: transparent;
+    border: none;
+    pointer-events: none;
 }
