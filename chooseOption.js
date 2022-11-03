@@ -8,6 +8,82 @@ window.addEventListener('load', function () {
     const S1O3 = document.getElementById("S1O3");
     const S1O4 = document.getElementById("S1O4");
 
+    const S2O1 = document.getElementById("S2O1");
+    const S2O2 = document.getElementById("S2O2");
+    const S2O3 = document.getElementById("S2O3");
+    const S2O4 = document.getElementById("S2O4");
+    const S2O5 = document.getElementById("S2O5");
+
+    const S3O1 = document.getElementById("S3O1");
+    const S3O2 = document.getElementById("S3O2");
+    const S3O3 = document.getElementById("S3O3");
+    const S3O4 = document.getElementById("S3O4");
+    const S3O5 = document.getElementById("S3O5");
+
+    const S4O1 = document.getElementById("S4O1");
+    const S4O2 = document.getElementById("S4O2");
+    const S4O3 = document.getElementById("S4O3");
+    const S4O4 = document.getElementById("S4O4");
+    const S4O5 = document.getElementById("S4O5");
+
+    const S5O1 = document.getElementById("S5O1");
+    const S5O2 = document.getElementById("S5O2");
+    const S5O3 = document.getElementById("S5O3");
+    const S5O4 = document.getElementById("S5O4");
+    const S5O5 = document.getElementById("S5O5");
+
+    const S6O1 = document.getElementById("S6O1");
+    const S6O2 = document.getElementById("S6O2");
+    const S6O3 = document.getElementById("S6O3");
+    const S6O4 = document.getElementById("S6O4");
+    const S6O5 = document.getElementById("S6O5");
+
+    const S7O1 = document.getElementById("S7O1");
+    const S7O2 = document.getElementById("S7O2");
+    const S7O3 = document.getElementById("S7O3");
+    const S7O4 = document.getElementById("S7O4");
+    const S7O5 = document.getElementById("S7O5");
+
+    const S8O1 = document.getElementById("S8O1");
+    const S8O2 = document.getElementById("S8O2");
+    const S8O3 = document.getElementById("S8O3");
+    const S8O4 = document.getElementById("S8O4");
+    const S8O5 = document.getElementById("S8O5");
+
+    const S9O1 = document.getElementById("S9O1");
+    const S9O2 = document.getElementById("S9O2");
+    const S9O3 = document.getElementById("S9O3");
+    const S9O4 = document.getElementById("S9O4");
+    const S9O5 = document.getElementById("S9O5");
+
+    const S10O1 = document.getElementById("S10O1");
+    const S10O2 = document.getElementById("S10O2");
+    const S10O3 = document.getElementById("S10O3");
+
+    const S11O1 = document.getElementById("S11O1");
+    const S11O2 = document.getElementById("S11O2");
+    const S11O3 = document.getElementById("S11O3");
+    const S11O4 = document.getElementById("S11O4");
+    const S11O5 = document.getElementById("S11O5");
+
+    const S12O1 = document.getElementById("S12O1");
+    const S12O2 = document.getElementById("S12O2");
+    const S12O3 = document.getElementById("S12O3");
+    const S12O4 = document.getElementById("S12O4");
+    const S12O5 = document.getElementById("S12O5");
+
+    const S13O1 = document.getElementById("S13O1");
+    const S13O2 = document.getElementById("S13O2");
+    const S13O3 = document.getElementById("S13O3");
+    const S13O4 = document.getElementById("S13O4");
+    const S13O5 = document.getElementById("S13O5");
+
+    const S14O1 = document.getElementById("S14O1");
+    const S14O2 = document.getElementById("S14O2");
+    const S14O3 = document.getElementById("S14O3");
+    const S14O4 = document.getElementById("S14O4");
+    const S14O5 = document.getElementById("S14O5");
+
     const departButton = document.getElementById("depart-btn");
 
     // nation can be froichua, lesniuberg, ufren, otraria, or niqnio
@@ -39,6 +115,273 @@ window.addEventListener('load', function () {
         });
         S1O4.addEventListener("click", function () {
             selectOption("station1", "option4");
+        });
+    }
+
+    if (S2O1 != null) {
+        S2O1.addEventListener("click", function () {
+            selectOption("station2", "option1");
+        });
+        S2O2.addEventListener("click", function () {
+            selectOption("station2", "option2");
+        });
+        S2O3.addEventListener("click", function () {
+            selectOption("station2", "option3");
+        });
+        S2O4.addEventListener("click", function () {
+            selectOption("station2", "option4");
+        });
+        S2O5.addEventListener("click", function () {
+            selectOption("station2", "option5");
+        });
+    }
+
+    if (S3O1 != null) {
+        S3O1.addEventListener("click", function () {
+            selectOption("station3", "option1");
+        });
+        S3O2.addEventListener("click", function () {
+            selectOption("station3", "option2");
+        });
+        S3O3.addEventListener("click", function () {
+            selectOption("station3", "option3");
+        });
+        S3O4.addEventListener("click", function () {
+            selectOption("station3", "option4");
+        });
+        S3O5.addEventListener("click", function () {
+            selectOption("station3", "option5");
+        });
+    }
+
+    if (S4O1 != null) {
+        S4O1.addEventListener("click", function () {
+            selectOption("station4", "option1");
+        });
+        S4O2.addEventListener("click", function () {
+            selectOption("station4", "option2");
+        });
+        S4O3.addEventListener("click", function () {
+            selectOption("station4", "option3");
+        });
+        S4O4.addEventListener("click", function () {
+            selectOption("station4", "option4");
+        });
+        S4O5.addEventListener("click", function () {
+            selectOption("station4", "option5");
+        });
+    }
+
+    if (S5O1 != null) {
+        S5O1.addEventListener("click", function () {
+            selectOption("station5", "option1");
+        });
+        S5O2.addEventListener("click", function () {
+            selectOption("station5", "option2");
+        });
+        S5O3.addEventListener("click", function () {
+            selectOption("station5", "option3");
+        });
+        S5O4.addEventListener("click", function () {
+            selectOption("station5", "option4");
+        });
+        S5O5.addEventListener("click", function () {
+            selectOption("station5", "option5");
+        });
+    }
+
+    if (S6O1 != null) {
+        S6O1.addEventListener("click", function () {
+            selectOption("station6", "option1");
+        });
+        S6O2.addEventListener("click", function () {
+            selectOption("station6", "option2");
+        });
+        S6O3.addEventListener("click", function () {
+            selectOption("station6", "option3");
+        });
+        S6O4.addEventListener("click", function () {
+            selectOption("station6", "option4");
+        });
+        S6O5.addEventListener("click", function () {
+            selectOption("station6", "option5");
+        });
+        S6O6.addEventListener("click", function () {
+            selectOption("station6", "option6");
+        });
+    }
+
+    if (S7O1 != null) {
+        S7O1.addEventListener("click", function () {
+            selectOption("station7", "option1");
+        });
+        S7O2.addEventListener("click", function () {
+            selectOption("station7", "option2");
+        });
+        S7O3.addEventListener("click", function () {
+            selectOption("station7", "option3");
+        });
+        S7O4.addEventListener("click", function () {
+            selectOption("station7", "option4");
+        });
+        S7O5.addEventListener("click", function () {
+            selectOption("station7", "option5");
+        });
+    }
+
+    if (S8O1 != null) {
+        S8O1.addEventListener("click", function () {
+            selectOption("station8", "option1");
+        });
+        S8O2.addEventListener("click", function () {
+            selectOption("station8", "option2");
+        });
+        S8O3.addEventListener("click", function () {
+            selectOption("station8", "option3");
+        });
+        S8O4.addEventListener("click", function () {
+            selectOption("station8", "option4");
+        });
+        S8O5.addEventListener("click", function () {
+            selectOption("station8", "option5");
+        });
+    }
+
+    if (S9O1 != null) {
+        S9O1.addEventListener("click", function () {
+            selectOption("station9", "option1");
+        });
+        S9O2.addEventListener("click", function () {
+            selectOption("station9", "option2");
+        });
+        S9O3.addEventListener("click", function () {
+            selectOption("station9", "option3");
+        });
+        S9O4.addEventListener("click", function () {
+            selectOption("station9", "option4");
+        });
+        S9O5.addEventListener("click", function () {
+            selectOption("station9", "option5");
+        });
+    }
+
+    if (S8O1 != null) {
+        S8O1.addEventListener("click", function () {
+            selectOption("station8", "option1");
+        });
+        S8O2.addEventListener("click", function () {
+            selectOption("station8", "option2");
+        });
+        S8O3.addEventListener("click", function () {
+            selectOption("station8", "option3");
+        });
+        S8O4.addEventListener("click", function () {
+            selectOption("station8", "option4");
+        });
+        S8O5.addEventListener("click", function () {
+            selectOption("station8", "option5");
+        });
+    }
+
+    if (S9O1 != null) {
+        S9O1.addEventListener("click", function () {
+            selectOption("station9", "option1");
+        });
+        S9O2.addEventListener("click", function () {
+            selectOption("station9", "option2");
+        });
+        S9O3.addEventListener("click", function () {
+            selectOption("station9", "option3");
+        });
+        S9O4.addEventListener("click", function () {
+            selectOption("station9", "option4");
+        });
+        S9O5.addEventListener("click", function () {
+            selectOption("station9", "option5");
+        });
+    }
+
+    if (S10O1 != null) {
+        S10O1.addEventListener("click", function () {
+            selectOption("station10", "option1");
+        });
+        S10O2.addEventListener("click", function () {
+            selectOption("station10", "option2");
+        });
+        S10O3.addEventListener("click", function () {
+            selectOption("station10", "option3");
+        });
+        S10O4.addEventListener("click", function () {
+            selectOption("station10", "option4");
+        });
+        S10O5.addEventListener("click", function () {
+            selectOption("station10", "option5");
+        });
+    }
+
+    if (S11O1 != null) {
+        S11O1.addEventListener("click", function () {
+            selectOption("station11", "option1");
+        });
+        S11O2.addEventListener("click", function () {
+            selectOption("station11", "option2");
+        });
+        S11O3.addEventListener("click", function () {
+            selectOption("station11", "option3");
+        });
+    }
+
+    if (S12O1 != null) {
+        S12O1.addEventListener("click", function () {
+            selectOption("station12", "option1");
+        });
+        S12O2.addEventListener("click", function () {
+            selectOption("station12", "option2");
+        });
+        S12O3.addEventListener("click", function () {
+            selectOption("station12", "option3");
+        });
+        S12O4.addEventListener("click", function () {
+            selectOption("station12", "option4");
+        });
+        S12O5.addEventListener("click", function () {
+            selectOption("station12", "option5");
+        });
+    }
+
+    if (S13O1 != null) {
+        S13O1.addEventListener("click", function () {
+            selectOption("station13", "option1");
+        });
+        S13O2.addEventListener("click", function () {
+            selectOption("station13", "option2");
+        });
+        S13O3.addEventListener("click", function () {
+            selectOption("station13", "option3");
+        });
+        S13O4.addEventListener("click", function () {
+            selectOption("station13", "option4");
+        });
+        S13O5.addEventListener("click", function () {
+            selectOption("station13", "option5");
+        });
+    }
+
+    if (S14O1 != null) {
+        S14O1.addEventListener("click", function () {
+            selectOption("station14", "option1");
+        });
+        S14O2.addEventListener("click", function () {
+            selectOption("station14", "option2");
+        });
+        S14O3.addEventListener("click", function () {
+            selectOption("station14", "option3");
+        });
+        S14O4.addEventListener("click", function () {
+            selectOption("station14", "option4");
+        });
+        S14O5.addEventListener("click", function () {
+            selectOption("station14", "option5");
         });
     }
 
