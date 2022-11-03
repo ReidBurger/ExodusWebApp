@@ -15,3 +15,8 @@ localStorage.setItem("station6", null);
 localStorage.setItem("station7", null);
 localStorage.setItem("station8", null);
 localStorage.setItem("station9", null);
+localStorage.setItem("station10", null);
+localStorage.setItem("station11", null);
+localStorage.setItem("station12", null);
+localStorage.setItem("station13", null);
+localStorage.setItem("station14", null);
