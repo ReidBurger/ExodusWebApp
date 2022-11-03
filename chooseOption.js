@@ -110,6 +110,21 @@ window.addEventListener('load', function () {
         if (localStorage.getItem("station9") == "null") {
             document.getElementById("check9").style.display = "none";
         } else { document.getElementById("check9").style.display = "inline" }
+        if (localStorage.getItem("station10") == "null") {
+            document.getElementById("check10").style.display = "none";
+        } else { document.getElementById("check10").style.display = "inline" }
+        if (localStorage.getItem("station11") == "null") {
+            document.getElementById("check11").style.display = "none";
+        } else { document.getElementById("check11").style.display = "inline" }
+        if (localStorage.getItem("station12") == "null") {
+            document.getElementById("check12").style.display = "none";
+        } else { document.getElementById("check12").style.display = "inline" }
+        if (localStorage.getItem("station13") == "null") {
+            document.getElementById("check13").style.display = "none";
+        } else { document.getElementById("check13").style.display = "inline" }
+        if (localStorage.getItem("station14") == "null") {
+            document.getElementById("check14").style.display = "none";
+        } else { document.getElementById("check14").style.display = "inline" }
     }
 
 })
