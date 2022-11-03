@@ -895,6 +895,296 @@ function calculateScore() {
             station14_planet_score += 3;
         }
     }
+
+    // calculations for anvolia
+    if (localStorage.getItem("planet") == "anvolia") {
+        // anvolia station 1 options
+        if (localStorage.getItem("station1") == "option1") {
+            station1_planet_score += 5;
+        }
+        else if (localStorage.getItem("station1") == "option2") {
+            station1_planet_score += 1;
+        }
+        else {
+            station1_planet_score += 3;
+        }
+        // anvolia station 2 options
+        if (localStorage.getItem("station2") == "option1") {
+            station2_planet_score += 5;
+        }
+        else if (localStorage.getItem("station2") == "option2") {
+            station2_planet_score += 1;
+        }
+        else {
+            station2_planet_score += 3;
+        }
+        //  anvolia station 3 options
+        if (localStorage.getItem("station3") == "option1") {
+            station3_planet_score += 5;
+        }
+        else if (localStorage.getItem("station3") == "option2") {
+            station3_planet_score += 1;
+        }
+        else {
+            station3_planet_score += 3;
+        }
+        //  anvolia station 4 options
+        if (localStorage.getItem("station4") == "option1") {
+            station4_planet_score += 5;
+        }
+        else if (localStorage.getItem("station4") == "option2") {
+            station4_planet_score += 1;
+        }
+        else {
+            station4_planet_score += 3;
+        }
+        //  anvolia station 5 options
+        if (localStorage.getItem("station5") == "option1") {
+            station5_planet_score += 5;
+        }
+        else if (localStorage.getItem("station5") == "option2") {
+            station5_planet_score += 1;
+        }
+        else {
+            station5_planet_score += 3;
+        }
+        //  anvolia station 6 options
+        if (localStorage.getItem("station6") == "option1") {
+            station6_planet_score += 5;
+        }
+        else if (localStorage.getItem("station6") == "option2") {
+            station6_planet_score += 1;
+        }
+        else {
+            station6_planet_score += 3;
+        }
+        //  anvolia station 7 options
+        if (localStorage.getItem("station7") == "option1") {
+            station7_planet_score += 5;
+        }
+        else if (localStorage.getItem("station7") == "option2") {
+            station7_planet_score += 1;
+        }
+        else {
+            station7_planet_score += 3;
+        }
+        //  anvolia station 8 options
+        if (localStorage.getItem("station8") == "option1") {
+            station8_planet_score += 5;
+        }
+        else if (localStorage.getItem("station8") == "option2") {
+            station8_planet_score += 1;
+        }
+        else {
+            station8_planet_score += 3;
+        }
+        //  anvolia station 9 options
+        if (localStorage.getItem("station9") == "option1") {
+            station9_planet_score += 5;
+        }
+        else if (localStorage.getItem("station9") == "option2") {
+            station9_planet_score += 1;
+        }
+        else {
+            station9_planet_score += 3;
+        }
+        //  anvolia station 10 options
+        if (localStorage.getItem("station10") == "option1") {
+            station10_planet_score += 5;
+        }
+        else if (localStorage.getItem("station10") == "option2") {
+            station10_planet_score += 1;
+        }
+        else {
+            station10_planet_score += 3;
+        }
+        //  anvolia station 11 options
+        if (localStorage.getItem("station11") == "option1") {
+            station11_planet_score += 5;
+        }
+        else if (localStorage.getItem("station11") == "option2") {
+            station11_planet_score += 1;
+        }
+        else {
+            station11_planet_score += 3;
+        }
+        //  anvolia station 12 options
+        if (localStorage.getItem("station12") == "option1") {
+            station12_planet_score += 5;
+        }
+        else if (localStorage.getItem("station12") == "option2") {
+            station12_planet_score += 1;
+        }
+        else {
+            station12_planet_score += 3;
+        }
+        //  anvolia station 13 options
+        if (localStorage.getItem("station13") == "option1") {
+            station13_planet_score += 5;
+        }
+        else if (localStorage.getItem("station13") == "option2") {
+            station13_planet_score += 1;
+        }
+        else {
+            station13_planet_score += 3;
+        }
+        //  anvolia station 14 options
+        if (localStorage.getItem("station14") == "option1") {
+            station14_planet_score += 5;
+        }
+        else if (localStorage.getItem("station14") == "option2") {
+            station14_planet_score += 1;
+        }
+        else {
+            station14_planet_score += 3;
+        }
+    }
+
+     // calculations for mion
+     if (localStorage.getItem("planet") == "mion") {
+        // mion station 1 options
+        if (localStorage.getItem("station1") == "option1") {
+            station1_planet_score += 5;
+        }
+        else if (localStorage.getItem("station1") == "option2") {
+            station1_planet_score += 1;
+        }
+        else {
+            station1_planet_score += 3;
+        }
+        // mion station 2 options
+        if (localStorage.getItem("station2") == "option1") {
+            station2_planet_score += 5;
+        }
+        else if (localStorage.getItem("station2") == "option2") {
+            station2_planet_score += 1;
+        }
+        else {
+            station2_planet_score += 3;
+        }
+        //  mion station 3 options
+        if (localStorage.getItem("station3") == "option1") {
+            station3_planet_score += 5;
+        }
+        else if (localStorage.getItem("station3") == "option2") {
+            station3_planet_score += 1;
+        }
+        else {
+            station3_planet_score += 3;
+        }
+        //  mion station 4 options
+        if (localStorage.getItem("station4") == "option1") {
+            station4_planet_score += 5;
+        }
+        else if (localStorage.getItem("station4") == "option2") {
+            station4_planet_score += 1;
+        }
+        else {
+            station4_planet_score += 3;
+        }
+        //  mion station 5 options
+        if (localStorage.getItem("station5") == "option1") {
+            station5_planet_score += 5;
+        }
+        else if (localStorage.getItem("station5") == "option2") {
+            station5_planet_score += 1;
+        }
+        else {
+            station5_planet_score += 3;
+        }
+        //  mion station 6 options
+        if (localStorage.getItem("station6") == "option1") {
+            station6_planet_score += 5;
+        }
+        else if (localStorage.getItem("station6") == "option2") {
+            station6_planet_score += 1;
+        }
+        else {
+            station6_planet_score += 3;
+        }
+        //  mion station 7 options
+        if (localStorage.getItem("station7") == "option1") {
+            station7_planet_score += 5;
+        }
+        else if (localStorage.getItem("station7") == "option2") {
+            station7_planet_score += 1;
+        }
+        else {
+            station7_planet_score += 3;
+        }
+        //  mion station 8 options
+        if (localStorage.getItem("station8") == "option1") {
+            station8_planet_score += 5;
+        }
+        else if (localStorage.getItem("station8") == "option2") {
+            station8_planet_score += 1;
+        }
+        else {
+            station8_planet_score += 3;
+        }
+        //  mion station 9 options
+        if (localStorage.getItem("station9") == "option1") {
+            station9_planet_score += 5;
+        }
+        else if (localStorage.getItem("station9") == "option2") {
+            station9_planet_score += 1;
+        }
+        else {
+            station9_planet_score += 3;
+        }
+        //  mion station 10 options
+        if (localStorage.getItem("station10") == "option1") {
+            station10_planet_score += 5;
+        }
+        else if (localStorage.getItem("station10") == "option2") {
+            station10_planet_score += 1;
+        }
+        else {
+            station10_planet_score += 3;
+        }
+        //  mion station 11 options
+        if (localStorage.getItem("station11") == "option1") {
+            station11_planet_score += 5;
+        }
+        else if (localStorage.getItem("station11") == "option2") {
+            station11_planet_score += 1;
+        }
+        else {
+            station11_planet_score += 3;
+        }
+        //  mion station 12 options
+        if (localStorage.getItem("station12") == "option1") {
+            station12_planet_score += 5;
+        }
+        else if (localStorage.getItem("station12") == "option2") {
+            station12_planet_score += 1;
+        }
+        else {
+            station12_planet_score += 3;
+        }
+        //  mion station 13 options
+        if (localStorage.getItem("station13") == "option1") {
+            station13_planet_score += 5;
+        }
+        else if (localStorage.getItem("station13") == "option2") {
+            station13_planet_score += 1;
+        }
+        else {
+            station13_planet_score += 3;
+        }
+        //  mion station 14 options
+        if (localStorage.getItem("station14") == "option1") {
+            station14_planet_score += 5;
+        }
+        else if (localStorage.getItem("station14") == "option2") {
+            station14_planet_score += 1;
+        }
+        else {
+            station14_planet_score += 3;
+        }
+    }
+
+
     localStorage.setItem("health", healthScore)
     localStorage.setItem("morale", moraleScore);
     localStorage.setItem("sustain", sustainScore);
