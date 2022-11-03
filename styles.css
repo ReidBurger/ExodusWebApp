@@ -9,6 +9,10 @@ body {
     height: 100vh;
 }
 
+#planetPageContainer {
+    overflow: auto;
+}
+
 h1 {
     color: white;
     text-align: center;
@@ -100,13 +104,20 @@ h4 {
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: 10em;
 }
 
 /* Section for the planets */
 .choosePlanet {
     display: flex;
-    height: 25vh;
-    padding-bottom: 2vh;
+    width: 18em;
+    margin-bottom: 2vh;
+    border-radius: 10px;
+    transition: all 0.3s;
+}
+
+.choosePlanet:hover {
+    opacity: 70%;
 }
 
 .planetDiv {
@@ -287,6 +298,7 @@ iframe {
 
 .modal-large-footer {
     justify-content: center;
+    padding: 0;
 }
 
 .btn-warning {

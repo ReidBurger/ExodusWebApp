@@ -3,20 +3,12 @@ window.addEventListener('load', function () {
     const planet2 = document.getElementById("planet2");
     const planet3 = document.getElementById("planet3");
 
-    const option1 = document.getElementById("S1O1");
-    const option2 = document.getElementById("S1O2");
-    const option3 = document.getElementById("S1O3");
-    const option4 = document.getElementById("S1O4");
+    const S1O1 = document.getElementById("S1O1");
+    const S1O2 = document.getElementById("S1O2");
+    const S1O3 = document.getElementById("S1O3");
+    const S1O4 = document.getElementById("S1O4");
 
-    localStorage.setItem("station1", null);
-    localStorage.setItem("station2", null);
-    localStorage.setItem("station3", null);
-    localStorage.setItem("station4", null);
-    localStorage.setItem("station5", null);
-    localStorage.setItem("station6", null);
-    localStorage.setItem("station7", null);
-    localStorage.setItem("station8", null);
-    localStorage.setItem("station9", null);
+    const departButton = document.getElementById("depart-btn");
 
     // nation can be froichua, lesniuberg, ufren, otraria, or niqnio
     localStorage.setItem("nation", "froichua");
@@ -34,25 +26,32 @@ window.addEventListener('load', function () {
         });
     }
 
-    /** choose option */
-    if (option1 != null) {
-        option1.addEventListener("click", function () {
-            selectOption("option1");
+    /** choose station 1 option */
+    if (S1O1 != null) {
+        S1O1.addEventListener("click", function () {
+            selectOption("station1", "option1");
         });
-        option2.addEventListener("click", function () {
-            selectOption("option2");
+        S1O2.addEventListener("click", function () {
+            selectOption("station1", "option2");
         });
-        option3.addEventListener("click", function () {
-            selectOption("option3");
+        S1O3.addEventListener("click", function () {
+            selectOption("station1", "option3");
         });
-        option4.addEventListener("click", function () {
-            selectOption("option4");
+        S1O4.addEventListener("click", function () {
+            selectOption("station1", "option4");
         });
     }
 
-    function selectOption(option) {
-        localStorage.setItem("station1", option);
+    departButton.addEventListener("click", function () {
+        // calculateScore();
+        // set the innerHTML of the score to healthScore/moraleScore etc.
+    })
+
+    function selectOption(station, option) {
+        
+        localStorage.setItem(station, option);
         updateCheckmarks();
+
     }
 
     function selectPlanet(planet) {
