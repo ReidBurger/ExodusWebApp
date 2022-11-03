@@ -40,25 +40,83 @@ function calculateScore() {
     if (localStorage.getItem("nation") == "froichua") {
         // froichua station 1 options
         if (localStorage.getItem("station1") == "option1") {
-            healthScore += 5;
-            moraleScore += 3;
-            sustainScore -= 5;
+            station1_nation_score += 5;
         }
         else if (localStorage.getItem("station1") == "option2") {
-            healthScore += 4;
-            moraleScore += 5;
-            sustainScore -= 2;
+            station1_nation_score += 1;
+        }
+        else {
+            station1_nation_score += 3;
         }
         // froichua station 2 options
         if (localStorage.getItem("station2") == "option1") {
-            healthScore += 5;
-            moraleScore += 3;
-            sustainScore -= 5;
+            station2_nation_score += 5;
         }
         else if (localStorage.getItem("station2") == "option2") {
-            healthScore += 4;
-            moraleScore += 5;
-            sustainScore -= 2;
+            station2_nation_score += 1;
+        }
+        else {
+            station2_nation_score += 3;
+        }
+        // froichua station 3 options
+        if (localStorage.getItem("station3") == "option1") {
+            station3_nation_score += 5;
+        }
+        else if (localStorage.getItem("station2") == "option2") {
+            station3_nation_score += 1;
+        }
+        else {
+            station3_nation_score += 3;
+        }
+        // froichua station 4 options
+        if (localStorage.getItem("station4") == "option1") {
+            station4_nation_score += 5;
+        }
+        else if (localStorage.getItem("station2") == "option2") {
+            station4_nation_score += 1;
+        }
+        else {
+            station4_nation_score += 3;
+        }
+        // froichua station 5 options
+        if (localStorage.getItem("station5") == "option1") {
+            station5_nation_score += 5;
+        }
+        else if (localStorage.getItem("station5") == "option2") {
+            station5_nation_score += 1;
+        }
+        else {
+            station5_nation_score += 3;
+        }
+        // froichua station 6 options
+        if (localStorage.getItem("station6") == "option1") {
+            station6_nation_score += 5;
+        }
+        else if (localStorage.getItem("station6") == "option2") {
+            station6_nation_score += 1;
+        }
+        else {
+            station6_nation_score += 3;
+        }
+        // froichua station 7 options
+        if (localStorage.getItem("station7") == "option1") {
+            station7_nation_score += 5;
+        }
+        else if (localStorage.getItem("station7") == "option2") {
+            station7_nation_score += 1;
+        }
+        else {
+            station7_nation_score += 3;
+        }
+        // froichua station 2 options
+        if (localStorage.getItem("station2") == "option1") {
+            station2_nation_score += 5;
+        }
+        else if (localStorage.getItem("station2") == "option2") {
+            station2_nation_score += 1;
+        }
+        else {
+            station2_nation_score += 3;
         }
     }
 
