@@ -140,8 +140,10 @@ h4 {
     margin-right: auto;
     height: 25vh;
     min-height: 10vh;
-    padding-bottom: 2vh;
     margin-top: 4vh;
+    background-color: #3C3C3C;
+    margin-bottom: 2vh;
+    border-radius: 100%;
 }
 
 .stationCentered {

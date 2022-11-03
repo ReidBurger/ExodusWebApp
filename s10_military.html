@@ -21,8 +21,9 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Sen:wght@400;700;800&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="styles2.css">
+  <link rel="stylesheet" href="styles.css">
   <script src="chooseOption.js"></script>
+  <script src="score.js"></script>
 </head>
 
 <body>
@@ -34,31 +35,33 @@
         <img src="images/playButton.png" alt="Play Button">
       </a>
       <img class="stationImage" src="images/spaceshipLogo.png" alt="Station Logo">
-
-      <div class="centeredStation">Station X</div>
     </div>
 
 
     <div id="stationList" class="d-grid gap-3">
       <input type="radio" class="btn btn-check" id="btn-check-outlined1" autocomplete="off" name="station1">
-      <label id="S1O1" class="btn btn-lg btn-outline-success btn-block" for="btn-check-outlined1">Option 1</label>
+      
+      <label id="S1O1" class="btn btn-lg btn-outline-success btn-block" for="btn-check-outlined1"><img src="images/DefenseIcon.png"> Option 1</label>
 
       <input type="radio" class="btn btn-check btn-secondary" id="btn-check-outlined2" autocomplete="off"
         name="station1">
-      <label id="S1O2" class="btn btn-lg btn-outline-success" for="btn-check-outlined2">Option 2</label>
+      <label id="S1O2" class="btn btn-lg btn-outline-success" for="btn-check-outlined2"><img src="images/DefenseIcon.png"> Option 2</label>
 
       <input type="radio" class="btn btn-check btn-secondary" id="btn-check-outlined3" autocomplete="off"
         name="station1">
-      <label id="S1O3" class="btn btn-lg btn-outline-success" for="btn-check-outlined3">Option 3</label>
+      <label id="S1O3" class="btn btn-lg btn-outline-success" for="btn-check-outlined3"><img src="images/DefenseIcon.png"> Option 3</label>
 
       <input type="radio" class="btn btn-check btn-secondary" id="btn-check-outlined4" autocomplete="off"
         name="station1">
-      <label id="S1O4" class="btn btn-lg btn-outline-success" for="btn-check-outlined4">Option 4</label>
+      <label id="S1O4" class="btn btn-lg btn-outline-success" for="btn-check-outlined4"><img src="images/DefenseIcon.png"> Option 4</label>
+
+      <input type="radio" class="btn btn-check btn-secondary" id="btn-check-outlined5" autocomplete="off"
+        name="station1">
+      <label id="S1O5" class="btn btn-lg btn-outline-success" for="btn-check-outlined5"><img src="images/DefenseIcon.png"> Option 5</label>
 
       <input type="radio" class="btn btn-check btn-secondary" id="btn-check-outlined4" autocomplete="off"
         name="station1">
-      <label id="S1O5" class="btn btn-lg btn-outline-success" for="btn-check-outlined4">Option 5</label>
-
+      <label id="fillerOption" class="btn btn-lg btn-outline-success" for="btn-check-outlined4">Filler</label>
       <input type="radio" class="btn btn-check btn-secondary" id="btn-check-outlined4" autocomplete="off"
         name="station1">
       <label id="fillerOption" class="btn btn-lg btn-outline-success" for="btn-check-outlined4">Filler</label>
@@ -209,14 +212,13 @@
           </div>
           <div class="modal-footer modal-large-footer no-border">
             <a href="FinalScore.html" role="button" class="btn btn-depart btn-lg btn-warning" id="depart-btn">
-              <h3>Depart</h3>
+              <h3 id="departButtonText">Depart</h3>
             </a>
           </div>
         </div>
       </div>
     </div>
-
-    <div class="buffer"></div>
+    
     <div class="nav-bar fixed-bottom">
       <div class="nav-section nation-btn-cont">
         <button type="button" class="btn btn-secondary nav-bar-btn nation-btn" data-bs-toggle="modal"
