@@ -391,10 +391,8 @@ window.addEventListener('load', function () {
     })
 
     function selectOption(station, option) {
-        
         localStorage.setItem(station, option);
         updateCheckmarks();
-
     }
 
     function selectPlanet(planet) {

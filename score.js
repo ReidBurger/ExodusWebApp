@@ -1,10 +1,10 @@
 function calculateScore() {
 
-    let healthScore = parseInt(localStorage.getItem("health"));
-    let moraleScore = parseInt(localStorage.getItem("morale"));
-    let sustainScore = parseInt(localStorage.getItem("sustain"));
-    let ecoScore = parseInt(localStorage.getItem("economy"));
-    let defScore = parseInt(localStorage.getItem("defense"));
+    let healthPercent = parseInt(localStorage.getItem("health"));
+    let moralePercent = parseInt(localStorage.getItem("morale"));
+    let sustainPercent = parseInt(localStorage.getItem("sustain"));
+    let ecoPercent = parseInt(localStorage.getItem("economy"));
+    let defPercent = parseInt(localStorage.getItem("defense"));
 
     let station1_nation_score = parseInt(localStorage.getItem("station1_nation_score"));
     let station2_nation_score = parseInt(localStorage.getItem("station2_nation_score"));
@@ -1195,11 +1195,55 @@ function calculateScore() {
             station14_planet_score += 3;
         }
     }
+   
+    // calculating final score for each category
+    let maxScore = parseInt(localStorage.getItem("maxScore"));
+    let moraleMaxScore = parseInt(localStorage.getItem("moraleMaxScore"));
+    let ecoMaxScore = parseInt(localStorage.getItem("ecoMaxScore"));
+    maxScore = 60;
+    moraleMaxScore = 70;
+    ecoMaxScore = 50;
 
+    let healthScore = parseInt(localStorage.getItem("healthScore"));
+    let moraleScore = parseInt(localStorage.getItem("moraleScore"));
+    let sustainScore = parseInt(localStorage.getItem("sustainScore"));
+    let ecoScore = parseInt(localStorage.getItem("ecoScore"));
+    let defScore = parseInt(localStorage.getItem("defScore"));
 
-    localStorage.setItem("health", healthScore)
-    localStorage.setItem("morale", moraleScore);
-    localStorage.setItem("sustain", sustainScore);
-    localStorage.setItem("economy", ecoScore);
-    localStorage.setItem("defense", defScore);
+    // max points 60
+    healthScore = station1_nation_score + station1_planet_score + station2_nation_score + station2_planet_score + 
+                  station3_nation_score + station3_planet_score + station4_nation_score + station4_planet_score +
+                  station7_nation_score + station7_planet_score + station9_nation_score + station9_planet_score;
+    healthPercent = (healthScore / maxScore) * 100;
+                
+    // max points 70
+    moraleScore = station1_nation_score + station1_planet_score + station3_nation_score + station3_planet_score + 
+                  station4_nation_score +  station4_planet_score + station6_nation_score + station6_planet_score +
+                  station7_nation_score + station7_planet_score + station10_nation_score + station10_planet_score +
+                  station11_nation_score + station11_planet_score;
+    moraleScore = (moraleScore / moraleMaxScore) * 100;
+             
+    // max points 60
+    sustainScore = station2_nation_score + station2_planet_score + station3_nation_score + station3_planet_score + 
+                   station5_nation_score + station5_planet_score + station7_nation_score + station7_planet_score +
+                   station8_nation_score + station8_planet_score + station13_nation_score + station13_planet_score;
+    sustainPercent = (sustainScore / maxScore) * 100;
+
+    // max points 50
+    ecoScore = station2_nation_score + station2_planet_score + station4_nation_score + station4_planet_score + 
+               station8_nation_score + station8_planet_score + station9_nation_score + station9_planet_score +
+               station10_nation_score + station10_planet_score;
+    ecoPercent = (ecoScore / ecoMaxScore) * 100;
+
+    // max points 60
+    defScore = station3_nation_score + station3_planet_score + station5_nation_score + station5_planet_score + 
+               station8_nation_score + station8_planet_score + station10_nation_score + station10_planet_score +
+               station12_nation_score + station12_planet_score + station14_nation_score + station14_planet_score;
+    defPercent = (defScore / maxScore) * 100;
+
+    localStorage.setItem("health", healthPercent)
+    localStorage.setItem("morale", moralePercent);
+    localStorage.setItem("sustain", sustainPercent);
+    localStorage.setItem("economy", ecoPercent);
+    localStorage.setItem("defense", defPercent);
 }
