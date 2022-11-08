@@ -87,7 +87,6 @@ window.addEventListener('load', function () {
     const departButton = document.getElementById("depart-btn");
 
     // nation can be froichua, lesniuberg, ufren, otraria, or niqnio
-    localStorage.setItem("nation", "froichua");
 
     /** choose planet */
     if (planet1 != null) {
@@ -410,6 +409,18 @@ window.addEventListener('load', function () {
     function formatNation(nation) {
         if (nation == "froichua") {
             return "Froi Chua"
+        }
+        if (nation == "lesniuberg") {
+            return "Lesniuberg"
+        }
+        if (nation == "nignio") {
+            return "Nignio"
+        }
+        if (nation == "otraria") {
+            return "Otraria"
+        }
+        if (nation == "ufren") {
+            return "Ufren"
         } else {
             return string.charAt(0).toUpperCase() + string.slice(1);
         }

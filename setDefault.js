@@ -1,3 +1,11 @@
+const queryString = window.location.search;
+console.log(queryString);
+const urlParams = new URLSearchParams(queryString);
+const nation = urlParams.get('nation')
+console.log(nation);
+
+localStorage.setItem("nation", nation);
+
 localStorage.setItem("health", "0")
 localStorage.setItem("morale", "0");
 localStorage.setItem("sustain", "0");
