@@ -266,9 +266,35 @@
             </ul>
           </div>
           <div class="modal-footer modal-large-footer no-border">
-            <a href="FinalScore.html" role="button" class="btn btn-depart btn-lg btn-warning" id="depart-btn">
+            <!-- <a href="FinalScore.html" role="button" class="btn btn-depart btn-lg btn-warning" id="depart-btn">
               <h3 id="departButtonText">Depart</h3>
+            </a> -->
+            <button type="button" class="btn btn-depart btn-lg btn-warning" id="depart-btn" data-bs-toggle="modal"
+              data-bs-target="#confirmModal">
+              <h3 id="departButtonText">Depart</h3>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Confirm Popup -->
+     <div class="modal fade" id="confirmModal" tabindex="-1" aria-labelledby="nationModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-medium">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="modal-title fs-5" id="nationModalLabel">Do you wish to continue?</h3>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <a href="FinalScore.html" role="button" class="btn btn-confirm btn-lg btn-warning">
+              <h3 id="departButtonText">Yes</h3>
             </a>
+            <button type="button" class="btn btn-lg btn-warning btn-cancel" data-bs-dismiss="modal">
+              <h3 id="departButtonText">Cancel</h3>
+            </button>
+          </div>
+          <div id="nation-name" class="modal-footer">
           </div>
         </div>
       </div>

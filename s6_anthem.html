@@ -40,23 +40,28 @@
 
     <div id="stationList" class="d-grid gap-3">
       <input type="radio" class="btn btn-check" id="btn-check-outlined1" autocomplete="off" name="station6">
-      <label id="S6O1" class="btn btn-lg btn-outline-success btn-block" for="btn-check-outlined1"><img src="images/DefenseIcon.png"> Orchestral</label>
+      <label id="S6O1" class="btn btn-lg btn-outline-success btn-block" for="btn-check-outlined1"><img
+          src="images/DefenseIcon.png"> Orchestral</label>
 
       <input type="radio" class="btn btn-check btn-secondary" id="btn-check-outlined2" autocomplete="off"
         name="station6">
-      <label id="S6O2" class="btn btn-lg btn-outline-success" for="btn-check-outlined2"><img src="images/DefenseIcon.png"> Jazz</label>
+      <label id="S6O2" class="btn btn-lg btn-outline-success" for="btn-check-outlined2"><img
+          src="images/DefenseIcon.png"> Jazz</label>
 
       <input type="radio" class="btn btn-check btn-secondary" id="btn-check-outlined3" autocomplete="off"
         name="station6">
-      <label id="S6O3" class="btn btn-lg btn-outline-success" for="btn-check-outlined3"><img src="images/DefenseIcon.png"> Folk</label>
+      <label id="S6O3" class="btn btn-lg btn-outline-success" for="btn-check-outlined3"><img
+          src="images/DefenseIcon.png"> Folk</label>
 
       <input type="radio" class="btn btn-check btn-secondary" id="btn-check-outlined4" autocomplete="off"
         name="station6">
-      <label id="S6O4" class="btn btn-lg btn-outline-success" for="btn-check-outlined4"><img src="images/DefenseIcon.png"> Pop</label>
+      <label id="S6O4" class="btn btn-lg btn-outline-success" for="btn-check-outlined4"><img
+          src="images/DefenseIcon.png"> Pop</label>
 
       <input type="radio" class="btn btn-check btn-secondary" id="btn-check-outlined5" autocomplete="off"
         name="station6">
-      <label id="S6O5" class="btn btn-lg btn-outline-success" for="btn-check-outlined5"><img src="images/DefenseIcon.png"> EDM</label>
+      <label id="S6O5" class="btn btn-lg btn-outline-success" for="btn-check-outlined5"><img
+          src="images/DefenseIcon.png"> EDM</label>
 
       <input type="radio" class="btn btn-check btn-secondary" id="btn-check-outlined4" autocomplete="off"
         name="station6">
@@ -169,7 +174,7 @@
                     <img class="station-list-img" src="images/station_img_default.png" alt="Station X Image">
                     <h5 class="station-list-title light">Anthem</h5>
                     <div class="station-list-check">
-                      <img id="check6"src="images/checkmark.png" alt="Station Complete">
+                      <img id="check6" src="images/checkmark.png" alt="Station Complete">
                     </div>
                   </div>
                 </a>
@@ -180,7 +185,7 @@
                     <img class="station-list-img" src="images/station_img_default.png" alt="Station X Image">
                     <h5 class="station-list-title light">Clothing</h5>
                     <div class="station-list-check">
-                      <img id="check7"src="images/checkmark.png" alt="Station Complete">
+                      <img id="check7" src="images/checkmark.png" alt="Station Complete">
                     </div>
                   </div>
                 </a>
@@ -265,14 +270,40 @@
             </ul>
           </div>
           <div class="modal-footer modal-large-footer no-border">
-            <a href="FinalScore.html" role="button" class="btn btn-depart btn-lg btn-warning" id="depart-btn">
+            <!-- <a href="FinalScore.html" role="button" class="btn btn-depart btn-lg btn-warning" id="depart-btn">
               <h3 id="departButtonText">Depart</h3>
-            </a>
+            </a> -->
+            <button type="button" class="btn btn-depart btn-lg btn-warning" id="depart-btn" data-bs-toggle="modal"
+              data-bs-target="#confirmModal">
+              <h3 id="departButtonText">Depart</h3>
+            </button>
           </div>
         </div>
       </div>
     </div>
-    
+
+    <!-- Confirm Popup -->
+    <div class="modal fade" id="confirmModal" tabindex="-1" aria-labelledby="nationModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-medium">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="modal-title fs-5" id="nationModalLabel">Do you wish to continue?</h3>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <a href="FinalScore.html" role="button" class="btn btn-confirm btn-lg btn-warning">
+              <h3 id="departButtonText">Yes</h3>
+            </a>
+            <button type="button" class="btn btn-lg btn-warning btn-cancel" data-bs-dismiss="modal">
+              <h3 id="departButtonText">Cancel</h3>
+            </button>
+          </div>
+          <div id="nation-name" class="modal-footer">
+          </div>
+        </div>
+      </div>
+    </div>
+
     <div class="nav-bar fixed-bottom">
       <div class="nav-section nation-btn-cont">
         <button type="button" class="btn btn-secondary nav-bar-btn nation-btn" data-bs-toggle="modal"

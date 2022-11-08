@@ -651,6 +651,27 @@ iframe {
     background-color: #E0E34F;
 }
 
+.btn-confirm {
+    position: relative;
+    height: 2em;
+    width: 5em;
+    float: right;
+    background-color: #2F8241;
+    margin-bottom: 0em;
+    margin-top: 0em;
+}
+
+.btn-cancel {
+    position: relative;
+    height: 2em;
+    width: 5em;
+    float: right;
+    background-color: red;
+    margin-bottom: 0em;
+    margin-top: 0em;
+    margin-right: 2em;
+}
+
 #departButtonText {
     position: absolute;
     top: 50%;
