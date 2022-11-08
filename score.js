@@ -5,6 +5,7 @@ function calculateScore() {
     let sustainPercent = parseInt(localStorage.getItem("sustain"));
     let ecoPercent = parseInt(localStorage.getItem("economy"));
     let defPercent = parseInt(localStorage.getItem("defense"));
+    let finalScore = parseInt(localStorage.getItem("finalScore"));
 
     let station1_nation_score = parseInt(localStorage.getItem("station1_nation_score"));
     let station2_nation_score = parseInt(localStorage.getItem("station2_nation_score"));
@@ -1552,9 +1553,12 @@ function calculateScore() {
                station12_nation_score + station12_planet_score + station14_nation_score + station14_planet_score;
     defPercent = Math.round((defScore / maxScore) * 100);
 
+    finalScore = (healthPercent + moralePercent + sustainPercent + ecoPercent + defPercent) * 20;
+    
     localStorage.setItem("health", healthPercent)
     localStorage.setItem("morale", moralePercent);
     localStorage.setItem("sustain", sustainPercent);
     localStorage.setItem("economy", ecoPercent);
     localStorage.setItem("defense", defPercent);
+    localStorage.setItem("finalScore", finalScore);
 }

@@ -2,6 +2,7 @@ window.addEventListener('load', function () {
 
     const finalNation = document.getElementById("finalNation");
     const finalPlanet = document.getElementById("finalPlanet");
+    const finalScore = document.getElementById("finalScore");
     const nationFlag = document.getElementsByClassName("flag")[0];
     const planetIcon = document.getElementsByClassName("FinalScorePlanet")[0];
 
@@ -34,6 +35,7 @@ window.addEventListener('load', function () {
     sustain.innerHTML = sustainPercent + "%";
     eco.innerHTML = ecoPercent + "%";
     defense.innerHTML = defPercent + "%";
+    finalScore.innerHTML = "Final Score: " + localStorage.getItem("finalScore");
 
     healthBar.style.width = healthPercent + "%";
     moraleBar.style.width = moralePercent + "%";
