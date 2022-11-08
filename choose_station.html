@@ -1,0 +1,215 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Choose Station</title>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"
+    integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk"
+    crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sen:wght@400;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+  <script type="module" src="chooseOption.js"></script>
+  <script src="score.js"></script>
+  <script>
+      $(document).ready(function(){
+        $("#stationsModal").modal('show');
+    });
+  </script>
+</head>
+
+<body>
+  <div class="container-sm">
+    <img class="logo" src="images/logo2.png" alt="Exodus Logo">
+
+    <div class="modal fade" id="stationsModal" tabindex="-1" aria-labelledby="stationsModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-fullscreen modal-large" id="stationModalDialog">
+        <div class="modal-content modal-large-content" id="stationModalContent">
+          <div class="modal-header no-border" style="padding-top: 2.5em">
+            <h3 class="modal-title fs-5 light" id="stationsModalLabel">STATIONS</h3>
+          </div>
+          <div class="modal-body no-border modal-body-large">
+            <ul class="station-list">
+
+              <li class="station-list-item">
+                <a role="button" class="btn station-list-btn" href="salli2_diet.html">
+                  <div class="station-list-container">
+                    <img class="station-list-img" src="images/station_img_default.png" alt="Station X Image">
+                    <h5 class="station-list-title light">Diet</h5>
+                    <div class="station-list-check">
+                      <img id="check1" src="images/checkmark.png" alt="Station Complete">
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li class="station-list-item">
+                <a role="button" class="btn station-list-btn" href="s2_energy.html">
+                  <div class="station-list-container">
+                    <img class="station-list-img" src="images/station_img_default.png" alt="Station X Image">
+                    <h5 class="station-list-title light">Energy</h5>
+                    <div class="station-list-check">
+                      <img id="check2" src="images/checkmark.png" alt="Station Complete">
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li class="station-list-item">
+                <a role="button" class="btn station-list-btn" href="s3_habitation.html">
+                  <div class="station-list-container">
+                    <img class="station-list-img" src="images/station_img_default.png" alt="Station X Image">
+                    <h5 class="station-list-title light">Habitation</h5>
+                    <div class="station-list-check">
+                      <img id="check3" src="images/checkmark.png" alt="Station Complete">
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li class="station-list-item">
+                <a role="button" class="btn station-list-btn" href="s4_entertainment.html">
+                  <div class="station-list-container">
+                    <img class="station-list-img" src="images/station_img_default.png" alt="Station X Image">
+                    <h5 class="station-list-title light">Entertainment</h5>
+                    <div class="station-list-check">
+                      <img id="check4" src="images/checkmark.png" alt="Station Complete">
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li class="station-list-item">
+                <a role="button" class="btn station-list-btn" href="s5_technology.html">
+                  <div class="station-list-container">
+                    <img class="station-list-img" src="images/station_img_default.png" alt="Station X Image">
+                    <h5 class="station-list-title light">Technology</h5>
+                    <div class="station-list-check">
+                      <img id="check5" src="images/checkmark.png" alt="Station Complete">
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li class="station-list-item">
+                <a role="button" class="btn station-list-btn" href="s6_anthem.html">
+                  <div class="station-list-container">
+                    <img class="station-list-img" src="images/station_img_default.png" alt="Station X Image">
+                    <h5 class="station-list-title light">Anthem</h5>
+                    <div class="station-list-check">
+                      <img id="check6"src="images/checkmark.png" alt="Station Complete">
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li class="station-list-item">
+                <a role="button" class="btn station-list-btn" href="salli3_clothing.html">
+                  <div class="station-list-container">
+                    <img class="station-list-img" src="images/station_img_default.png" alt="Station X Image">
+                    <h5 class="station-list-title light">Clothing</h5>
+                    <div class="station-list-check">
+                      <img id="check7"src="images/checkmark.png" alt="Station Complete">
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li class="station-list-item">
+                <a role="button" class="btn station-list-btn" href="s8_transportation.html">
+                  <div class="station-list-container">
+                    <img class="station-list-img" src="images/station_img_default.png" alt="Station X Image">
+                    <h5 class="station-list-title light">Transportation</h5>
+                    <div class="station-list-check">
+                      <img id="check8" src="images/checkmark.png" alt="Station Complete">
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li class="station-list-item">
+                <a role="button" class="btn station-list-btn" href="salli4_trade.html">
+                  <div class="station-list-container">
+                    <img class="station-list-img" src="images/station_img_default.png" alt="Station X Image">
+                    <h5 class="station-list-title light">Trade</h5>
+                    <div class="station-list-check">
+                      <img id="check9" src="images/checkmark.png" alt="Station Complete">
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li class="station-list-item">
+                <a role="button" class="btn station-list-btn" href="s10_military.html">
+                  <div class="station-list-container">
+                    <img class="station-list-img" src="images/station_img_default.png" alt="Station X Image">
+                    <h5 class="station-list-title light">Military</h5>
+                    <div class="station-list-check">
+                      <img id="check10" src="images/checkmark.png" alt="Station Complete">
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li class="station-list-item">
+                <a role="button" class="btn station-list-btn" href="s11_pet.html">
+                  <div class="station-list-container">
+                    <img class="station-list-img" src="images/station_img_default.png" alt="Station X Image">
+                    <h5 class="station-list-title light">Pet</h5>
+                    <div class="station-list-check">
+                      <img id="check11" src="images/checkmark.png" alt="Station Complete">
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li class="station-list-item">
+                <a role="button" class="btn station-list-btn" href="s12_weapons.html">
+                  <div class="station-list-container">
+                    <img class="station-list-img" src="images/station_img_default.png" alt="Station X Image">
+                    <h5 class="station-list-title light">Weapons</h5>
+                    <div class="station-list-check">
+                      <img id="check12" src="images/checkmark.png" alt="Station Complete">
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li class="station-list-item">
+                <a role="button" class="btn station-list-btn" href="s13_trash.html">
+                  <div class="station-list-container">
+                    <img class="station-list-img" src="images/station_img_default.png" alt="Station X Image">
+                    <h5 class="station-list-title light">Trash</h5>
+                    <div class="station-list-check">
+                      <img id="check13" src="images/checkmark.png" alt="Station Complete">
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li class="station-list-item">
+                <a role="button" class="btn station-list-btn" href="s14_militia.html">
+                  <div class="station-list-container">
+                    <img class="station-list-img" src="images/station_img_default.png" alt="Station X Image">
+                    <h5 class="station-list-title light">Militia</h5>
+                    <div class="station-list-check">
+                      <img id="check14" src="images/checkmark.png" alt="Station Complete">
+                    </div>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="modal-footer modal-large-footer no-border">
+            <a href="FinalScore.html" role="button" class="btn btn-depart btn-lg btn-warning" id="depart-btn">
+              <h3 id="departButtonText">Depart</h3>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
