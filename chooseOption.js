@@ -206,9 +206,6 @@ window.addEventListener('load', function () {
         S6O5.addEventListener("click", function () {
             selectOption("station6", "option5");
         });
-        S6O6.addEventListener("click", function () {
-            selectOption("station6", "option6");
-        });
     }
 
     if (S7O1 != null) {
@@ -329,6 +326,12 @@ window.addEventListener('load', function () {
         S11O3.addEventListener("click", function () {
             selectOption("station11", "option3");
         });
+        S11O4.addEventListener("click", function () {
+            selectOption("station11", "option4");
+        });
+        S11O5.addEventListener("click", function () {
+            selectOption("station11", "option5");
+        });
     }
 
     if (S12O1 != null) {
@@ -386,8 +389,7 @@ window.addEventListener('load', function () {
     }
 
     departButton.addEventListener("click", function () {
-        // calculateScore();
-        // set the innerHTML of the score to healthScore/moraleScore etc.
+        calculateScore();
     })
 
     function selectOption(station, option) {

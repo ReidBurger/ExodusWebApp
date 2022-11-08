@@ -525,32 +525,27 @@ iframe {
 }
 
 .health {
-    width: 14em;
-    min-width: 7em;
+    width: 0%;
     background: linear-gradient(180deg, #DC2F2F 0%, #B70A0A 46.88%, #D72626 100%);
 }
 
 .morale {
-    width: 10em;
-    min-width: 5em;
+    width: 0%;
     background: linear-gradient(180deg, #D1CB2F 0%, #A8A20F 53.12%, #DFD832 100%);
 }
 
 .sustainability {
-    width: 12em;
-    min-width: 6em;
+    width: 0%;
     background: linear-gradient(180deg, #4EB94C 0%, #137511 52.08%, #2D8E2B 100%);
 }
 
 .economy {
-    width: 5em;
-    min-width: 2.5em;
+    width: 0%;
     background: linear-gradient(180deg, #671186 0%, #4C0963 51.04%, #671186 100%, #671186 100%);
 }
 
 .defense {
-    width: 8em;
-    min-width: 4em;
+    width: 0%;
     background: linear-gradient(180deg, #3891B7 0%, #25789B 49.48%, #3891B7 100%);
 }
 
