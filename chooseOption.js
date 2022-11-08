@@ -1,3 +1,5 @@
+import { updateSelected } from "./updateOption.js";
+
 window.addEventListener('load', function () {
     const planet1 = document.getElementById("planet1");
     const planet2 = document.getElementById("planet2");
@@ -366,18 +368,28 @@ window.addEventListener('load', function () {
     if (S14O1 != null) {
         S14O1.addEventListener("click", function () {
             selectOption("station14", "option1");
+            localStorage.setItem("s14SelectedOption", "S14O1");
+            updateSelected();
         });
         S14O2.addEventListener("click", function () {
             selectOption("station14", "option2");
+            localStorage.setItem("s14SelectedOption", "S14O2");
+            updateSelected();
         });
         S14O3.addEventListener("click", function () {
             selectOption("station14", "option3");
+            localStorage.setItem("s14SelectedOption", "S14O3");
+            updateSelected();
         });
         S14O4.addEventListener("click", function () {
             selectOption("station14", "option4");
+            localStorage.setItem("s14SelectedOption", "S14O4");
+            updateSelected();
         });
         S14O5.addEventListener("click", function () {
             selectOption("station14", "option5");
+            localStorage.setItem("s14SelectedOption", "S14O5");
+            updateSelected();
         });
     }
 
@@ -428,6 +440,7 @@ window.addEventListener('load', function () {
     }
 
     updateCheckmarks();
+    updateSelected();
     createPopups();
 
     function updateCheckmarks() {

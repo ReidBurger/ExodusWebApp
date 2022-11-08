@@ -2,6 +2,8 @@ window.addEventListener('load', function () {
 
     const finalNation = document.getElementById("finalNation");
     const finalPlanet = document.getElementById("finalPlanet");
+    const nationFlag = document.getElementsByClassName("flag")[0];
+    const planetIcon = document.getElementsByClassName("FinalScorePlanet")[0];
 
     const health = document.getElementById("health");
     const morale = document.getElementById("morale");
@@ -21,8 +23,11 @@ window.addEventListener('load', function () {
     const ecoPercent = localStorage.getItem("economy");
     const defPercent = localStorage.getItem("defense");
 
-    finalNation.innerHTML = localStorage.getItem("nation");
-    finalPlanet.innerHTML = localStorage.getItem("planet");
+    finalNation.innerHTML = localStorage.getItem("nation").charAt(0).toUpperCase() + localStorage.getItem("nation").slice(1);
+    finalPlanet.innerHTML = localStorage.getItem("planet").charAt(0).toUpperCase() + localStorage.getItem("planet").slice(1);
+
+    nationFlag.src = localStorage.getItem("flagURL");
+    planetIcon.src = localStorage.getItem("planetURL");
 
     health.innerHTML = healthPercent + "%";
     morale.innerHTML = moralePercent + "%";

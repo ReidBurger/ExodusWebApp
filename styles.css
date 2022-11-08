@@ -13,6 +13,10 @@ body {
     overflow: auto;
 }
 
+#finalPageContainer {
+    overflow: auto;
+}
+
 h1 {
     color: white;
     text-align: center;
@@ -285,6 +289,7 @@ iframe {
 
 .modal-img {
     width: 100%;
+    border-radius: 5px;
 }
 
 .modal-large {
@@ -416,6 +421,7 @@ iframe {
     margin-top: 2vh;
     margin-left: auto;
     margin-right: auto;
+    padding: 0;
     max-width: 20em;
     height: auto;
     /* height: 70vh;
@@ -424,7 +430,7 @@ iframe {
 
 /* rounds the corner of a container */
 .rounded {
-    border-radius: .8rem !important
+    border-radius: .8rem !important;
 }
 
 .buffer2 {
@@ -432,10 +438,22 @@ iframe {
     z-index: 100;
 }
 
+#resultTitle {
+    background-color: #497E98;
+    border-top-left-radius: .8rem;
+    border-top-right-radius: .8rem;
+    margin: auto;
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+    color: white;
+    padding: 0.75em 0em;
+}
+
 .nation {
     float: left;
     padding-top: .8em;
-    padding-left: .5em;
+    padding-left: 1em;
     width: auto;
     height: auto;
     margin-top: 1em;
@@ -444,6 +462,8 @@ iframe {
 .flag {
     width: 4em;
     height: 2em;
+    border-radius: 5px;
+    margin-right: 0.5em;
 }
 
 .FinalScoreNationText {
@@ -454,7 +474,7 @@ iframe {
 .planet {
     float: right;
     padding-top: .3em;
-    padding-right: .5em;
+    padding-right: 1em;
     width: auto;
     height: auto;
     margin-top: 1em;
@@ -463,6 +483,8 @@ iframe {
 .FinalScorePlanet {
     width: 3em;
     height: 3em;
+    border-radius: 5px;
+    margin-right: 0.5em;
 }
 
 .FinalScorePlanetText {
@@ -471,11 +493,13 @@ iframe {
 }
 
 .MainBar {
+    display: flex;
     margin-top: 2em;
 }
 
 .icon {
-    padding-top: .35em;
+    padding-left: 1em;
+    align-items: center;
 }
 
 .percent {
@@ -506,10 +530,10 @@ iframe {
     position: relative;
     display: block;
     margin-left: auto;
-    margin-right: auto;
+    margin-right: 1em;
     width: 15em;
     min-width: 10em;
-    height: 6vh;
+    height: 5vh;
     min-height: 2em;
     float: right;
     background: linear-gradient(180deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 50.52%, rgba(255, 255, 255, 0.2) 100%);
@@ -519,7 +543,7 @@ iframe {
 .fill {
     display: block;
     margin-right: auto;
-    height: 6vh;
+    height: 5vh;
     min-height: 2em;
     border-radius: 10px;
 }
@@ -596,6 +620,10 @@ iframe {
     color: #FFF;
     border-color: transparent;
     width: 65%;
+}
+
+.optionSelected14 {
+    background-color: #198754;
 }
 
 .btn-outline-success:hover {
