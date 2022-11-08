@@ -73,3 +73,9 @@ localStorage.setItem("station11_planet_score", 0);
 localStorage.setItem("station12_planet_score", 0);
 localStorage.setItem("station13_planet_score", 0);
 localStorage.setItem("station14_planet_score", 0);
+
+window.addEventListener('load', function () {
+    const landingFlag = document.getElementById("landingFlag");
+
+    landingFlag.src = "images/" + localStorage.getItem("nation") +".png"
+})

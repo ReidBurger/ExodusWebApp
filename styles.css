@@ -9,6 +9,37 @@ body {
     height: 100vh;
 }
 
+#welcomeContainer {
+    position: relative;
+    height: 30vh;
+}
+
+#landingFlag {
+    opacity: 50%;
+    border-radius: 5px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: block;
+    width: 20em;
+    margin: auto;
+    transform: translate(-50%, -50%);
+}
+
+#landingVideo {
+    z-index: 100;
+}
+
+#welcomeText { 
+    z-index: 100;
+    font-size: 2em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+}
+
 #planetPageContainer {
     overflow: auto;
 }
