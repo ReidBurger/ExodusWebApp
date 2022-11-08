@@ -307,12 +307,6 @@ window.addEventListener('load', function () {
         S10O3.addEventListener("click", function () {
             selectOption("station10", "option3");
         });
-        S10O4.addEventListener("click", function () {
-            selectOption("station10", "option4");
-        });
-        S10O5.addEventListener("click", function () {
-            selectOption("station10", "option5");
-        });
     }
 
     if (S11O1 != null) {
@@ -413,8 +407,8 @@ window.addEventListener('load', function () {
         if (nation == "lesniuberg") {
             return "Lesniuberg"
         }
-        if (nation == "nignio") {
-            return "Nignio"
+        if (nation == "niqnio") {
+            return "Niqnio"
         }
         if (nation == "otraria") {
             return "Otraria"
