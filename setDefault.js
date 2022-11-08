@@ -14,6 +14,21 @@ localStorage.setItem("defense", "0");
 
 localStorage.setItem("planet", null);
 
+localStorage.setItem("s1SelectedOption", null);
+localStorage.setItem("s2SelectedOption", null);
+localStorage.setItem("s3SelectedOption", null);
+localStorage.setItem("s4SelectedOption", null);
+localStorage.setItem("s5SelectedOption", null);
+localStorage.setItem("s6SelectedOption", null);
+localStorage.setItem("s7SelectedOption", null);
+localStorage.setItem("s8SelectedOption", null);
+localStorage.setItem("s9SelectedOption", null);
+localStorage.setItem("s10SelectedOption", null);
+localStorage.setItem("s11SelectedOption", null);
+localStorage.setItem("s12SelectedOption", null);
+localStorage.setItem("s13SelectedOption", null);
+localStorage.setItem("s14SelectedOption", null);
+
 localStorage.setItem("station1", null);
 localStorage.setItem("station2", null);
 localStorage.setItem("station3", null);

@@ -107,261 +107,349 @@ window.addEventListener('load', function () {
     if (S1O1 != null) {
         S1O1.addEventListener("click", function () {
             selectOption("station1", "option1");
+            localStorage.setItem("s1SelectedOption", "S1O1");
+            updateSelected();
         });
         S1O2.addEventListener("click", function () {
             selectOption("station1", "option2");
+            localStorage.setItem("s1SelectedOption", "S1O2");
+            updateSelected();
         });
         S1O3.addEventListener("click", function () {
             selectOption("station1", "option3");
+            localStorage.setItem("s1SelectedOption", "S1O3");
+            updateSelected();
         });
         S1O4.addEventListener("click", function () {
             selectOption("station1", "option4");
+            localStorage.setItem("s1SelectedOption", "S1O4");
+            updateSelected();
         });
     }
 
     if (S2O1 != null) {
         S2O1.addEventListener("click", function () {
             selectOption("station2", "option1");
+            localStorage.setItem("s2SelectedOption", "S2O1");
+            updateSelected();
         });
         S2O2.addEventListener("click", function () {
             selectOption("station2", "option2");
+            localStorage.setItem("s2SelectedOption", "S2O2");
+            updateSelected();
         });
         S2O3.addEventListener("click", function () {
             selectOption("station2", "option3");
+            localStorage.setItem("s2SelectedOption", "S2O3");
+            updateSelected();
         });
         S2O4.addEventListener("click", function () {
             selectOption("station2", "option4");
+            localStorage.setItem("s2SelectedOption", "S2O4");
+            updateSelected();
         });
         S2O5.addEventListener("click", function () {
             selectOption("station2", "option5");
+            localStorage.setItem("s2SelectedOption", "S2O5");
+            updateSelected();
         });
     }
 
     if (S3O1 != null) {
         S3O1.addEventListener("click", function () {
             selectOption("station3", "option1");
+            localStorage.setItem("s3SelectedOption", "S3O1");
+            updateSelected();
         });
         S3O2.addEventListener("click", function () {
             selectOption("station3", "option2");
+            localStorage.setItem("s3SelectedOption", "S3O2");
+            updateSelected();
         });
         S3O3.addEventListener("click", function () {
             selectOption("station3", "option3");
+            localStorage.setItem("s3SelectedOption", "S3O3");
+            updateSelected();
         });
         S3O4.addEventListener("click", function () {
             selectOption("station3", "option4");
+            localStorage.setItem("s3SelectedOption", "S3O4");
+            updateSelected();
         });
         S3O5.addEventListener("click", function () {
             selectOption("station3", "option5");
+            localStorage.setItem("s3SelectedOption", "S3O5");
+            updateSelected();
         });
     }
 
     if (S4O1 != null) {
         S4O1.addEventListener("click", function () {
             selectOption("station4", "option1");
+            localStorage.setItem("s4SelectedOption", "S4O1");
+            updateSelected();
         });
         S4O2.addEventListener("click", function () {
             selectOption("station4", "option2");
+            localStorage.setItem("s4SelectedOption", "S4O2");
+            updateSelected();
         });
         S4O3.addEventListener("click", function () {
             selectOption("station4", "option3");
+            localStorage.setItem("s4SelectedOption", "S4O3");
+            updateSelected();
         });
         S4O4.addEventListener("click", function () {
             selectOption("station4", "option4");
+            localStorage.setItem("s4SelectedOption", "S4O4");
+            updateSelected();
         });
         S4O5.addEventListener("click", function () {
             selectOption("station4", "option5");
+            localStorage.setItem("s4SelectedOption", "S4O5");
+            updateSelected();
         });
     }
 
     if (S5O1 != null) {
         S5O1.addEventListener("click", function () {
             selectOption("station5", "option1");
+            localStorage.setItem("s5SelectedOption", "S5O1");
+            updateSelected();
         });
         S5O2.addEventListener("click", function () {
             selectOption("station5", "option2");
+            localStorage.setItem("s5SelectedOption", "S5O2");
+            updateSelected();
         });
         S5O3.addEventListener("click", function () {
             selectOption("station5", "option3");
+            localStorage.setItem("s5SelectedOption", "S5O3");
+            updateSelected();
         });
         S5O4.addEventListener("click", function () {
             selectOption("station5", "option4");
+            localStorage.setItem("s5SelectedOption", "S5O4");
+            updateSelected();
         });
         S5O5.addEventListener("click", function () {
             selectOption("station5", "option5");
+            localStorage.setItem("s5SelectedOption", "S5O5");
+            updateSelected();
         });
     }
 
     if (S6O1 != null) {
         S6O1.addEventListener("click", function () {
             selectOption("station6", "option1");
+            localStorage.setItem("s6SelectedOption", "S6O1");
+            updateSelected();
         });
         S6O2.addEventListener("click", function () {
             selectOption("station6", "option2");
+            localStorage.setItem("s6SelectedOption", "S6O2");
+            updateSelected();
         });
         S6O3.addEventListener("click", function () {
             selectOption("station6", "option3");
+            localStorage.setItem("s6SelectedOption", "S6O3");
+            updateSelected();
         });
         S6O4.addEventListener("click", function () {
             selectOption("station6", "option4");
+            localStorage.setItem("s6SelectedOption", "S6O4");
+            updateSelected();
         });
         S6O5.addEventListener("click", function () {
             selectOption("station6", "option5");
+            localStorage.setItem("s6SelectedOption", "S6O5");
+            updateSelected();
         });
     }
 
     if (S7O1 != null) {
         S7O1.addEventListener("click", function () {
             selectOption("station7", "option1");
+            localStorage.setItem("s7SelectedOption", "S7O1");
+            updateSelected();
         });
         S7O2.addEventListener("click", function () {
             selectOption("station7", "option2");
+            localStorage.setItem("s7SelectedOption", "S7O2");
+            updateSelected();
         });
         S7O3.addEventListener("click", function () {
             selectOption("station7", "option3");
+            localStorage.setItem("s7SelectedOption", "S7O3");
+            updateSelected();
         });
         S7O4.addEventListener("click", function () {
             selectOption("station7", "option4");
+            localStorage.setItem("s7SelectedOption", "S7O4");
+            updateSelected();
         });
         S7O5.addEventListener("click", function () {
             selectOption("station7", "option5");
+            localStorage.setItem("s7SelectedOption", "S7O5");
+            updateSelected();
         });
     }
 
     if (S8O1 != null) {
         S8O1.addEventListener("click", function () {
             selectOption("station8", "option1");
+            localStorage.setItem("s8SelectedOption", "S8O1");
+            updateSelected();
         });
         S8O2.addEventListener("click", function () {
             selectOption("station8", "option2");
+            localStorage.setItem("s8SelectedOption", "S8O2");
+            updateSelected();
         });
         S8O3.addEventListener("click", function () {
             selectOption("station8", "option3");
+            localStorage.setItem("s8SelectedOption", "S8O3");
+            updateSelected();
         });
         S8O4.addEventListener("click", function () {
             selectOption("station8", "option4");
+            localStorage.setItem("s8SelectedOption", "S8O4");
+            updateSelected();
         });
         S8O5.addEventListener("click", function () {
             selectOption("station8", "option5");
+            localStorage.setItem("s8SelectedOption", "S8O5");
+            updateSelected();
         });
     }
 
     if (S9O1 != null) {
         S9O1.addEventListener("click", function () {
             selectOption("station9", "option1");
+            localStorage.setItem("s9SelectedOption", "S9O1");
+            updateSelected();
         });
         S9O2.addEventListener("click", function () {
             selectOption("station9", "option2");
+            localStorage.setItem("s9SelectedOption", "S9O2");
+            updateSelected();
         });
         S9O3.addEventListener("click", function () {
             selectOption("station9", "option3");
+            localStorage.setItem("s9SelectedOption", "S9O3");
+            updateSelected();
         });
         S9O4.addEventListener("click", function () {
             selectOption("station9", "option4");
+            localStorage.setItem("s9SelectedOption", "S9O4");
+            updateSelected();
         });
         S9O5.addEventListener("click", function () {
             selectOption("station9", "option5");
-        });
-    }
-
-    if (S8O1 != null) {
-        S8O1.addEventListener("click", function () {
-            selectOption("station8", "option1");
-        });
-        S8O2.addEventListener("click", function () {
-            selectOption("station8", "option2");
-        });
-        S8O3.addEventListener("click", function () {
-            selectOption("station8", "option3");
-        });
-        S8O4.addEventListener("click", function () {
-            selectOption("station8", "option4");
-        });
-        S8O5.addEventListener("click", function () {
-            selectOption("station8", "option5");
-        });
-    }
-
-    if (S9O1 != null) {
-        S9O1.addEventListener("click", function () {
-            selectOption("station9", "option1");
-        });
-        S9O2.addEventListener("click", function () {
-            selectOption("station9", "option2");
-        });
-        S9O3.addEventListener("click", function () {
-            selectOption("station9", "option3");
-        });
-        S9O4.addEventListener("click", function () {
-            selectOption("station9", "option4");
-        });
-        S9O5.addEventListener("click", function () {
-            selectOption("station9", "option5");
+            localStorage.setItem("s9SelectedOption", "S9O5");
+            updateSelected();
         });
     }
 
     if (S10O1 != null) {
         S10O1.addEventListener("click", function () {
             selectOption("station10", "option1");
+            localStorage.setItem("s10SelectedOption", "S10O1");
+            updateSelected();
         });
         S10O2.addEventListener("click", function () {
             selectOption("station10", "option2");
+            localStorage.setItem("s10SelectedOption", "S10O2");
+            updateSelected();
         });
         S10O3.addEventListener("click", function () {
             selectOption("station10", "option3");
+            localStorage.setItem("s10SelectedOption", "S10O3");
+            updateSelected();
         });
     }
 
     if (S11O1 != null) {
         S11O1.addEventListener("click", function () {
             selectOption("station11", "option1");
+            localStorage.setItem("s11SelectedOption", "S11O1");
+            updateSelected();
         });
         S11O2.addEventListener("click", function () {
             selectOption("station11", "option2");
+            localStorage.setItem("s11SelectedOption", "S11O2");
+            updateSelected();
         });
         S11O3.addEventListener("click", function () {
             selectOption("station11", "option3");
+            localStorage.setItem("s11SelectedOption", "S11O3");
+            updateSelected();
         });
         S11O4.addEventListener("click", function () {
             selectOption("station11", "option4");
+            localStorage.setItem("s11SelectedOption", "S11O4");
+            updateSelected();
         });
         S11O5.addEventListener("click", function () {
             selectOption("station11", "option5");
+            localStorage.setItem("s11SelectedOption", "S11O5");
+            updateSelected();
         });
     }
 
     if (S12O1 != null) {
         S12O1.addEventListener("click", function () {
             selectOption("station12", "option1");
+            localStorage.setItem("s12SelectedOption", "S12O1");
+            updateSelected();
         });
         S12O2.addEventListener("click", function () {
             selectOption("station12", "option2");
+            localStorage.setItem("s12SelectedOption", "S12O2");
+            updateSelected();
         });
         S12O3.addEventListener("click", function () {
             selectOption("station12", "option3");
+            localStorage.setItem("s12SelectedOption", "S12O3");
+            updateSelected();
         });
         S12O4.addEventListener("click", function () {
             selectOption("station12", "option4");
+            localStorage.setItem("s12SelectedOption", "S12O4");
+            updateSelected();
         });
         S12O5.addEventListener("click", function () {
             selectOption("station12", "option5");
+            localStorage.setItem("s12SelectedOption", "S12O5");
+            updateSelected();
         });
     }
 
     if (S13O1 != null) {
         S13O1.addEventListener("click", function () {
             selectOption("station13", "option1");
+            localStorage.setItem("s13SelectedOption", "S13O1");
+            updateSelected();
         });
         S13O2.addEventListener("click", function () {
             selectOption("station13", "option2");
+            localStorage.setItem("s13SelectedOption", "S13O2");
+            updateSelected();
         });
         S13O3.addEventListener("click", function () {
             selectOption("station13", "option3");
+            localStorage.setItem("s13SelectedOption", "S13O3");
+            updateSelected();
         });
         S13O4.addEventListener("click", function () {
             selectOption("station13", "option4");
+            localStorage.setItem("s13SelectedOption", "S13O4");
+            updateSelected();
         });
         S13O5.addEventListener("click", function () {
             selectOption("station13", "option5");
+            localStorage.setItem("s13SelectedOption", "S13O5");
+            updateSelected();
         });
     }
 

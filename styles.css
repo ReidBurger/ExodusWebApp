@@ -463,7 +463,6 @@ iframe {
     width: 4em;
     height: 2em;
     border-radius: 5px;
-    margin-right: 0.5em;
 }
 
 .FinalScoreNationText {
@@ -484,7 +483,6 @@ iframe {
     width: 3em;
     height: 3em;
     border-radius: 5px;
-    margin-right: 0.5em;
 }
 
 .FinalScorePlanetText {
@@ -622,12 +620,47 @@ iframe {
     width: 65%;
 }
 
-.optionSelected14 {
+.optionSelected1 {
     background-color: #198754;
 }
-
-.btn-outline-success:hover {
-    border: 1px solid #137511;
+.optionSelected2 {
+    background-color: #198754;
+}
+.optionSelected3 {
+    background-color: #198754;
+}
+.optionSelected4 {
+    background-color: #198754;
+}
+.optionSelected5 {
+    background-color: #198754;
+}
+.optionSelected6 {
+    background-color: #198754;
+}
+.optionSelected7 {
+    background-color: #198754;
+}
+.optionSelected8 {
+    background-color: #198754;
+}
+.optionSelected9 {
+    background-color: #198754;
+}
+.optionSelected10 {
+    background-color: #198754;
+}
+.optionSelected11 {
+    background-color: #198754;
+}
+.optionSelected12 {
+    background-color: #198754;
+}
+.optionSelected13 {
+    background-color: #198754;
+}
+.optionSelected14 {
+    background-color: #198754;
 }
 
 .btn-success {
