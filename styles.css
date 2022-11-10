@@ -659,6 +659,11 @@ iframe {
     background-color: #2F8241;
     margin-bottom: 0em;
     margin-top: 0em;
+    border: none;
+}
+
+.btn-confirm h3, .btn-cancel h3 {
+    font-size: 21px;
 }
 
 .btn-cancel {
@@ -670,6 +675,7 @@ iframe {
     margin-bottom: 0em;
     margin-top: 0em;
     margin-right: 2em;
+    border: none;
 }
 
 #departButtonText {

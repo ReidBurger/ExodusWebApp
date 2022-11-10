@@ -86,7 +86,7 @@ window.addEventListener('load', function () {
     const S14O4 = document.getElementById("S14O4");
     const S14O5 = document.getElementById("S14O5");
 
-    const departButton = document.getElementById("depart-btn");
+    const departButton = document.getElementsByClassName("btn-confirm")[0];
 
     // nation can be froichua, lesniuberg, ufren, otraria, or niqnio
 
@@ -482,7 +482,14 @@ window.addEventListener('load', function () {
     }
 
     departButton.addEventListener("click", function () {
-        calculateScore();
+        const finalScore = calculateScore();
+        if (finalScore < 6000) {
+            departButton.href = "fail.html";
+        }
+        else {
+            departButton.href = "success.html";
+        }
+
     })
 
     function selectOption(station, option) {

@@ -1561,4 +1561,6 @@ function calculateScore() {
     localStorage.setItem("economy", ecoPercent);
     localStorage.setItem("defense", defPercent);
     localStorage.setItem("finalScore", finalScore);
+
+    return finalScore;
 }
