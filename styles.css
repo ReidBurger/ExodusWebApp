@@ -312,6 +312,10 @@ iframe {
     justify-content: center;
 }
 
+#planet3 {
+    padding-bottom: 80px;
+}
+
 .planet-btn-cont {
     display: flex;
     justify-content: flex-end;
@@ -351,6 +355,12 @@ iframe {
     margin-bottom: 1.5em;
     margin-top: 50px;
     background-color: red;
+}
+
+.button-label {
+    color: white;
+    font-size: small;
+    font-weight: 200;
 }
 
 .light {
