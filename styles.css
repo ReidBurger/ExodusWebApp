@@ -173,12 +173,13 @@ h4 {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    height: 25vh;
+    height: 20vh;
     min-height: 10vh;
     margin-top: 4vh;
     background-color: #3C3C3C;
     margin-bottom: 2vh;
     border-radius: 100%;
+    padding: 20px;
 }
 
 .stationCentered {
@@ -232,6 +233,11 @@ h4 {
     left: 7em;
     right: 6em;
     color: white;
+}
+
+.optionIcon {
+    height: 30px;
+    width: 30px;
 }
 /* End section for the station page */
 
