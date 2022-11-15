@@ -11,7 +11,7 @@ body {
 
 #welcomeContainer {
     position: relative;
-    height: 30vh;
+    height: 200px;
 }
 
 #landingFlag {
@@ -131,8 +131,9 @@ h4 {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    padding-top: 4vh;
-    padding-bottom: 4vh;
+    height: 6%;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .planet-container {
@@ -173,12 +174,13 @@ h4 {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    height: 25vh;
+    height: 20vh;
     min-height: 10vh;
     margin-top: 4vh;
     background-color: #3C3C3C;
     margin-bottom: 2vh;
     border-radius: 100%;
+    padding: 20px;
 }
 
 .stationCentered {
@@ -232,6 +234,11 @@ h4 {
     left: 7em;
     right: 6em;
     color: white;
+}
+
+.optionIcon {
+    height: 30px;
+    width: 30px;
 }
 /* End section for the station page */
 
@@ -306,6 +313,10 @@ iframe {
     justify-content: center;
 }
 
+#planet3 {
+    padding-bottom: 80px;
+}
+
 .planet-btn-cont {
     display: flex;
     justify-content: flex-end;
@@ -345,6 +356,12 @@ iframe {
     margin-bottom: 1.5em;
     margin-top: 50px;
     background-color: red;
+}
+
+.button-label {
+    color: white;
+    font-size: small;
+    font-weight: 200;
 }
 
 .light {
@@ -642,7 +659,7 @@ iframe {
 }
 
 .btn-next {
-    margin-bottom: 4em;
+    margin-bottom: 3em;
 }
 
 .btn-depart {
