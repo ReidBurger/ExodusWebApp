@@ -37,11 +37,13 @@
     <img class="logo" src="images/logo2.png" alt="Exodus Logo">
 
     <div class="modal fade" id="stationsModal" tabindex="-1" aria-labelledby="stationsModalLabel" aria-hidden="true">
+      <script>
+        $('#stationsModal').modal({backdrop: static});
+      </script>
       <div class="modal-dialog modal-fullscreen modal-large" id="stationModalDialog">
         <div class="modal-content modal-large-content" id="stationModalContent">
-          <button type="button" class="btn-close btn-close-white light" data-bs-dismiss="modal"
-            aria-label="Close"></button>
           <div class="modal-header no-border">
+            <div style="height: 5em"></div>
             <h3 class="modal-title fs-5 light" id="stationsModalLabel">STATIONS</h3>
           </div>
           <div class="modal-body no-border modal-body-large">
