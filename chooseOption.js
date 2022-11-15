@@ -483,7 +483,7 @@ window.addEventListener('load', function () {
 
     departButton.addEventListener("click", function () {
         const finalScore = calculateScore();
-        if (finalScore < 6000) {
+        if (finalScore < 6500) {
             departButton.href = "fail.html";
         }
         else {
