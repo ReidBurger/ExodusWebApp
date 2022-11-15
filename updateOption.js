@@ -302,13 +302,13 @@ export function updateSelected() {
         }
         
         if (localStorage.getItem("s10SelectedOption") == "S10O1") {
-            S10O1.classList.add("optionSelected11");
+            S10O1.classList.add("optionSelected10");
         }
         else if (localStorage.getItem("s10SelectedOption") == "S10O2") {
-            S10O2.classList.add("optionSelected11");
+            S10O2.classList.add("optionSelected10");
         }
         else if (localStorage.getItem("s10SelectedOption") == "S10O3") {
-            S10O3.classList.add("optionSelected11");
+            S10O3.classList.add("optionSelected10");
         }
     }
 
