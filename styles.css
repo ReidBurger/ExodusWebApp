@@ -634,23 +634,29 @@ iframe {
     background: linear-gradient(180deg, #3891B7 0%, #25789B 49.48%, #3891B7 100%);
 }
 
-::-webkit-scrollbar {
+#stationList::-webkit-scrollbar {
     width: 0px;
 }
 
+.modal-body::-webkit-scrollbar {
+    width: 7px;
+}
+
 /* Track */
-::-webkit-scrollbar-track {
-    background: transparent;
+.modal-body::-webkit-scrollbar-track {
+    background: #2C2C2C;
+    border-radius: 3px;
 }
 
 /* Handle */
-::-webkit-scrollbar-thumb {
-    background: transparent;
+.modal-body::-webkit-scrollbar-thumb {
+    background: rgba(245, 245, 245, 0.829);
+    border-radius: 3px;
 }
 
 /* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-    background: transparent;
+.modal-body::-webkit-scrollbar-thumb:hover {
+    background: #818181;
 }
 
 .buffer {

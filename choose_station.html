@@ -26,27 +26,35 @@
   <script type="module" src="chooseOption.js"></script>
   <script src="score.js"></script>
   <script>
-      $(document).ready(function(){
-        $("#stationsModal").modal('show');
+    $(document).ready(function(){
+      $("#stationsModal").modal('show');
     });
+
+    window.addEventListener('load', function () {
+      const body = document.getElementById('chooseBodyContainer');
+      body.style.pointerEvents = "none";
+    })
   </script>
 </head>
 
-<body>
+<body id="chooseBodyContainer">
   <div class="container-sm">
     <img class="logo" src="images/logo2.png" alt="Exodus Logo">
 
     <div class="modal fade" id="stationsModal" tabindex="-1" aria-labelledby="stationsModalLabel" aria-hidden="true">
+<<<<<<< Updated upstream
       <script>
         $('#stationsModal').modal(static);
       </script>
+=======
+>>>>>>> Stashed changes
       <div class="modal-dialog modal-fullscreen modal-large" id="stationModalDialog">
         <div class="modal-content modal-large-content" id="stationModalContent">
           <div class="modal-header no-border">
             <div style="height: 5em"></div>
             <h3 class="modal-title fs-5 light" id="stationsModalLabel">STATIONS</h3>
           </div>
-          <div class="modal-body no-border modal-body-large">
+          <div class="modal-body no-border modal-body-large" style="margin-bottom: 2em;">
             <ul class="station-list">
 
               <li class="station-list-item">
@@ -55,7 +63,6 @@
                     <img class="station-list-img" src="images/station_icons/Diet.png" alt="Station X Image">
                     <h5 class="station-list-title light">Diet</h5>
                     <div class="station-list-check">
-                      <img id="check1" src="images/checkmark.png" alt="Station Complete">
                     </div>
                   </div>
                 </a>
@@ -66,7 +73,6 @@
                     <img class="station-list-img" src="images/station_icons/Energy.png" alt="Station X Image">
                     <h5 class="station-list-title light">Energy</h5>
                     <div class="station-list-check">
-                      <img id="check2" src="images/checkmark.png" alt="Station Complete">
                     </div>
                   </div>
                 </a>
@@ -77,7 +83,6 @@
                     <img class="station-list-img" src="images/station_icons/Habitation.png" alt="Station X Image">
                     <h5 class="station-list-title light">Habitation</h5>
                     <div class="station-list-check">
-                      <img id="check3" src="images/checkmark.png" alt="Station Complete">
                     </div>
                   </div>
                 </a>
@@ -88,7 +93,6 @@
                     <img class="station-list-img" src="images/station_icons/Entertainment.png" alt="Station X Image">
                     <h5 class="station-list-title light">Entertainment</h5>
                     <div class="station-list-check">
-                      <img id="check4" src="images/checkmark.png" alt="Station Complete">
                     </div>
                   </div>
                 </a>
@@ -99,7 +103,6 @@
                     <img class="station-list-img" src="images/station_icons/Technology.png" alt="Station X Image">
                     <h5 class="station-list-title light">Technology</h5>
                     <div class="station-list-check">
-                      <img id="check5" src="images/checkmark.png" alt="Station Complete">
                     </div>
                   </div>
                 </a>
@@ -110,7 +113,6 @@
                     <img class="station-list-img" src="images/station_icons/Anthem.png" alt="Station X Image">
                     <h5 class="station-list-title light">Anthem</h5>
                     <div class="station-list-check">
-                      <img id="check6"src="images/checkmark.png" alt="Station Complete">
                     </div>
                   </div>
                 </a>
@@ -121,7 +123,6 @@
                     <img class="station-list-img" src="images/station_icons/Clothing.png" alt="Station X Image">
                     <h5 class="station-list-title light">Clothing</h5>
                     <div class="station-list-check">
-                      <img id="check7"src="images/checkmark.png" alt="Station Complete">
                     </div>
                   </div>
                 </a>
@@ -132,7 +133,6 @@
                     <img class="station-list-img" src="images/station_icons/Transportation.png" alt="Station X Image">
                     <h5 class="station-list-title light">Transportation</h5>
                     <div class="station-list-check">
-                      <img id="check8" src="images/checkmark.png" alt="Station Complete">
                     </div>
                   </div>
                 </a>
@@ -143,7 +143,6 @@
                     <img class="station-list-img" src="images/station_icons/Trade.png" alt="Station X Image">
                     <h5 class="station-list-title light">Trade</h5>
                     <div class="station-list-check">
-                      <img id="check9" src="images/checkmark.png" alt="Station Complete">
                     </div>
                   </div>
                 </a>
@@ -154,7 +153,6 @@
                     <img class="station-list-img" src="images/station_icons/Military_.png" alt="Station X Image">
                     <h5 class="station-list-title light">Military</h5>
                     <div class="station-list-check">
-                      <img id="check10" src="images/checkmark.png" alt="Station Complete">
                     </div>
                   </div>
                 </a>
@@ -165,7 +163,6 @@
                     <img class="station-list-img" src="images/station_img_default.png" alt="Station X Image">
                     <h5 class="station-list-title light">Pet</h5>
                     <div class="station-list-check">
-                      <img id="check11" src="images/checkmark.png" alt="Station Complete">
                     </div>
                   </div>
                 </a>
@@ -176,7 +173,6 @@
                     <img class="station-list-img" src="images/station_img_default.png" alt="Station X Image">
                     <h5 class="station-list-title light">Weapons</h5>
                     <div class="station-list-check">
-                      <img id="check12" src="images/checkmark.png" alt="Station Complete">
                     </div>
                   </div>
                 </a>
@@ -187,7 +183,6 @@
                     <img class="station-list-img" src="images/station_img_default.png" alt="Station X Image">
                     <h5 class="station-list-title light">Trash</h5>
                     <div class="station-list-check">
-                      <img id="check13" src="images/checkmark.png" alt="Station Complete">
                     </div>
                   </div>
                 </a>
@@ -198,44 +193,17 @@
                     <img class="station-list-img" src="images/station_img_default.png" alt="Station X Image">
                     <h5 class="station-list-title light">Militia</h5>
                     <div class="station-list-check">
-                      <img id="check14" src="images/checkmark.png" alt="Station Complete">
                     </div>
                   </div>
                 </a>
               </li>
             </ul>
           </div>
-          <div class="modal-footer modal-large-footer no-border">
-            <!-- <a href="FinalScore.html" role="button" class="btn btn-depart btn-lg btn-warning" id="depart-btn">
-              <h3 id="departButtonText">Depart</h3>
-            </a> -->
-            <button type="button" class="btn btn-depart btn-lg btn-warning" id="depart-btn" data-bs-toggle="modal"
-              data-bs-target="#confirmModal">  <h3 id="departButtonText">Depart</h3></button>
-          </div>
+ 
         </div>
       </div>
     </div>
 
-    <div class="modal fade" id="confirmModal" tabindex="-1" aria-labelledby="nationModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered modal-medium">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h3 class="modal-title fs-5" id="nationModalLabel">Do you wish to continue?</h3>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            <a href="" role="button" class="btn btn-confirm btn-lg btn-warning">
-              <h3 id="departButtonText">Yes</h3>
-            </a>
-            <button type="button" class="btn btn-lg btn-warning btn-cancel" data-bs-dismiss="modal">
-              <h3 id="departButtonText">Cancel</h3>
-            </button>
-          </div>
-          <div id="nation-name" class="modal-footer">
-          </div>
-        </div>
-      </div>
-    </div>
   </div>
 </body>
 
