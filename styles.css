@@ -555,11 +555,20 @@ iframe {
 .MainBar {
     display: flex;
     margin-top: 2em;
+    position: relative;
 }
 
 .icon {
-    padding-left: 1em;
+    position: absolute;
+    display: flex;
     align-items: center;
+}
+
+.category-icon {
+    display: flex;
+    align-self: center;
+    padding-left: 1em;
+    height: 30px;
 }
 
 .percent {
