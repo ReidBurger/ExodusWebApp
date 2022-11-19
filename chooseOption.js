@@ -87,6 +87,13 @@ window.addEventListener('load', function () {
     const S14O5 = document.getElementById("S14O5");
 
     const departButton = document.getElementsByClassName("btn-confirm")[0];
+    
+    const nationDes = document.getElementById("nationModal").getElementsByClassName("modal-body")[0];
+    const planetDes = document.getElementById("planetModal").getElementsByClassName("modal-body")[0];
+    const nationDesTag = document.createElement("p");
+    const planetDesTag = document.createElement("p");
+    nationDes.appendChild(nationDesTag);
+    planetDes.appendChild(planetDesTag);
 
     // nation can be froichua, lesniuberg, ufren, otraria, or niqnio
 
@@ -499,6 +506,20 @@ window.addEventListener('load', function () {
 
     function selectPlanet(planet) {
         localStorage.setItem("planet", planet);
+        if (planet == "ecralia") {
+            planetDesTag.innerHTML = "Hot, Rain forest, rainy,  thunderstorms,  normal days" + "<br>" + "Natural resources: wild boar, fertile soil" + "<br>" + "Moons and sun: 2 moons, 1 sun"
+        }
+
+        
+        if (planet == "mion") {
+            planetDesTag.innerHTML = "Cold, Desert, blizzards, windy,  always night" + "<br>" + "Natural resources: Heavy metals, Natural Gas" + "<br>" + "Moons and sun: 17 moons, 1 far away sun"
+        }
+
+        
+        if (planet == "anvolia") {
+            planetDesTag.innerHTML = "Temperate, Island, monsoons, half the year is light, the other half is dark (Alaska), Fresh water surrounding" + "<br>" + "Natural Resources: unlimited supply of water, lost civilization (Atlantis)" +"<br>" + "Moons: 1, two orbiting suns"
+        }
+        
         setImageStrings(localStorage.getItem("planet"), localStorage.getItem("nation"));
     }
 
@@ -506,21 +527,27 @@ window.addEventListener('load', function () {
         localStorage.setItem("planetURL", "images/" + planet + ".png");
         localStorage.setItem("flagURL", "images/" + nation + ".png");
     }
+    
 
     function formatNation(nation) {
         if (nation == "froichua") {
+            nationDesTag.innerHTML = "The Chuarians believe themselves to be a very distinguished group of people, and each person strives to be their best in all facets of life and learning. To be a Chuarian is to know opulence and a long life of luxury. Perhaps the most luxurious part is their genetic engineering that they use to create only the most beautiful and intelligent offspring that money can buy. In this society beauty is directly tied to wealth, as it is assumed that your parents were wealthy enough to provide you with the best upgrade. Chuarians are naturally competitive, not only in their quest to have the most riches, largest homes, and best looks, but also in their careers and everything they do. There is no problem a Chuarian has faced that money can't fix, including who should rule. Chuarians don't have time to make all of those silly decisions, and prefer to leave it up to their specially design AI to handle it for them."
             return "Froi Chua"
         }
         if (nation == "lesniuberg") {
+            nationDesTag.innerHTML = "Lesniuberg. Where to begin? This is a society that heavily emphasizes the written word and passing down traditions and information using strict record keeping practices, because of their genetic predisposition to chronic memory loss which plagues at least 85% of their population. The Lenubergian royal family is responsible for collecting and keeping these records and disseminating important information to their citizens, they also are the least likely to suffer from memory loss. Lenubergians are also predisposed to intense gluten intolerance which frequently makes their skin extremely sensitive. Because of their connection to the past Lenubergians are heralds of the 'old world' and fear technological and social progress in fear that their past will be forgotten. "
             return "Lesniuberg"
         }
         if (nation == "niqnio") {
+            nationDesTag.innerHTML = "How can Niqnio be described as only one thing, considering how many groups of people, languages, and values make up this society? Niqnian citizens are all under the age of twenty five, as they value the spirit and joy of youth and believe that progress is in the hands of those who come next, not those who have already been. These are youths who love being active in the fresh air, and some say they have a deep connection with the animal kingdom, given their open hearts and open minds. There is no common language, making widespread communication very difficult, and this society has no formal government system. Instead, citizens are committed to a kind of productive anarchy."
             return "Niqnio"
         }
         if (nation == "otraria") {
+            nationDesTag.innerHTML = "Some may say that the Otrarians were cursed with hereditary blindness, but to them it's a blessing. Though they cannot see, Otrarians have heightened senses and have developed keen echolocation that allows them to get around seamlessly. In fact, it's possible you may not even realize that the friendly folks are blind. These are people who love their families and spend lots of time with the people they love. Naturally intelligent, the Otrarians love a mind game or a challenge and aren't afraid of a little struggle, because they know they can do anything when they are together. This is also reflected in their government system which values everyone's voices and looks to achieve group success instead of individual wealth."
             return "Otraria"
         }
         if (nation == "ufren") {
+            nationDesTag.innerHTML = "The people of Ufren are governed by a very strict theocratic totalitarian government that values modesty, nature, and their goddess-given talents. Their society is matriarchal and citizens are encouraged to have large families. Part of their rich cultural heritage is their many different culinary arts, which play an important role in their every day lives. Ufrenian women are encouraged to build up their relationships with other women in the community to strengthen the society both emotionally and physically, while men are given the noble task of raising the community's young."
             return "Ufren"
         } else {
             return string.charAt(0).toUpperCase() + string.slice(1);
@@ -530,8 +557,9 @@ window.addEventListener('load', function () {
     function createPopups() {
         document.getElementById("flag-popup").src = localStorage.getItem("flagURL");
         document.getElementById("planet-popup").src = localStorage.getItem("planetURL");
+        const selectedNation = formatNation(localStorage.getItem("nation"));
         document.getElementById("nation-name").innerHTML = "<h3>" + 
-            formatNation(localStorage.getItem("nation")) + "</h3>";
+            selectedNation + "</h3>";
     }
 
     updateCheckmarks();
